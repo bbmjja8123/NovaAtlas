@@ -39,7 +39,7 @@ public struct CleanupNotificationSink: CleanupEventSink {
             formatted)
         content.sound = .default
         // 通知深链：点击进历史时间线还原本次清理。
-        content.userInfo = ["deepLink": "klaris://history"]
+        content.userInfo = ["deepLink": "novaatlas://history"]
 
         let request = UNNotificationRequest(
             identifier: "kwise.cleanup.\(event.date.timeIntervalSince1970)",

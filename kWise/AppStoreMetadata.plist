@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleDisplayName</key>
-    <string>Klaris</string>
+    <string>NovaAtlas</string>
     <key>CFBundleName</key>
-    <string>Klaris</string>
+    <string>NovaAtlas</string>
     <key>CFBundleIdentifier</key>
-    <string>app.kraftly.klaris</string>
+    <string>com.novaatlas.novaatlas</string>
     <key>LSApplicationCategoryType</key>
     <string>public.app-category.utilities</string>
     <key>NSHumanReadableCopyright</key>
-    <string>© 2026 Kraftly. All rights reserved.</string>
+    <string>© 2026 NovaAtlas. All rights reserved.</string>
 </dict>
 </plist>

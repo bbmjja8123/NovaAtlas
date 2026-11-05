@@ -94,7 +94,7 @@ public struct KMonitorAppShortcuts: AppShortcutsProvider {
 //
 // 1. Add a new App Intents Extension target to the kMonitor Xcode project:
 //    File > New > Target > App Intents Extension.
-// 2. Set Bundle ID to `app.kraftly.kmonitor.intents`.
+// 2. Set Bundle ID to `com.novaatlas.kmonitor.intents`.
 // 3. Set deployment target to macOS 13.
 // 4. Add the eight intent Swift files plus this file to the new target.
 // 5. Ensure the main app target also imports each intent type (it does so

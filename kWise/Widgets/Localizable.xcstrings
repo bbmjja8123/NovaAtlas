@@ -84,73 +84,73 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "One tap to Klaris quick clean"
+            "value" : "One tap to NovaAtlas quick clean"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ワンタップで Klaris クイック整理"
+            "value" : "ワンタップで NovaAtlas クイック整理"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "一点即达 Klaris 快捷回收"
+            "value" : "一点即达 NovaAtlas 快捷回收"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "一點即達 Klaris 快速清理"
+            "value" : "一點即達 NovaAtlas 快速清理"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "탭 한 번으로 Klaris 빠른 정리"
+            "value" : "탭 한 번으로 NovaAtlas 빠른 정리"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mit einem Tipp zur Klaris-Schnellbereinigung"
+            "value" : "Mit einem Tipp zur NovaAtlas-Schnellbereinigung"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Un appui lance le nettoyage rapide de Klaris"
+            "value" : "Un appui lance le nettoyage rapide de NovaAtlas"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Un toque para la limpieza rápida de Klaris"
+            "value" : "Un toque para la limpieza rápida de NovaAtlas"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Um toque para a limpeza rápida do Klaris"
+            "value" : "Um toque para a limpeza rápida do NovaAtlas"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Un tocco per la pulizia rapida di Klaris"
+            "value" : "Un tocco per la pulizia rapida di NovaAtlas"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Запустите быструю очистку Klaris одним нажатием"
+            "value" : "Запустите быструю очистку NovaAtlas одним нажатием"
           }
         },
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "لمسة واحدة لبدء التنظيف السريع في Klaris"
+            "value" : "لمسة واحدة لبدء التنظيف السريع في NovaAtlas"
           }
         }
       }

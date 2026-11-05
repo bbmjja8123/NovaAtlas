@@ -3,7 +3,7 @@
 // Task 5（feature sprint）：Dock 图标拖放粉碎的路由链。
 //
 // Dock 拖放 → NSApplicationDelegate `application(_:open:)` →
-// `Notification.Name.klarisOpenFiles` → RootView `.onReceive` →
+// `Notification.Name.novaatlasOpenFiles` → RootView `.onReceive` →
 // `DragToShredModel.urlsDropped`（既有全有全无校验，与整窗拖放同语义）。
 // 另钉 Info.plist 必须声明 CFBundleDocumentTypes——没有它 open 事件
 // 根本不会进 AppDelegate，Dock 拖放目标不出现。
@@ -20,16 +20,16 @@ import AppKit
 // DragToShredModel 是 @MainActor —— 相关断言须在主 actor 上跑。
 @MainActor
 final class DockDropRoutingTests: XCTestCase {
-    // 跳 1：AppDelegate 收到 open 事件 → 以 `.klarisOpenFiles` 广播 urls。
-    func testAppDelegateOpenPostsKlarisOpenFiles() {
+    // 跳 1：AppDelegate 收到 open 事件 → 以 `.novaatlasOpenFiles` 广播 urls。
+    func testAppDelegateOpenPostsNovaAtlasOpenFiles() {
         let regular = FileManager.default.temporaryDirectory
             .appendingPathComponent("dock-\(UUID().uuidString).txt")
         try? Data("x".utf8).write(to: regular)
         defer { try? FileManager.default.removeItem(at: regular) }
 
-        let delivered = expectation(description: "klarisOpenFiles delivered")
+        let delivered = expectation(description: "novaatlasOpenFiles delivered")
         let observer = NotificationCenter.default.addObserver(
-            forName: .klarisOpenFiles, object: nil, queue: .main
+            forName: .novaatlasOpenFiles, object: nil, queue: .main
         ) { note in
             XCTAssertEqual(note.userInfo?["urls"] as? [URL], [regular])
             delivered.fulfill()
@@ -40,7 +40,7 @@ final class DockDropRoutingTests: XCTestCase {
         wait(for: [delivered], timeout: 2)
     }
 
-    // 跳 2：RootView 把 `.klarisOpenFiles` 接到同一 DragToShredModel
+    // 跳 2：RootView 把 `.novaatlasOpenFiles` 接到同一 DragToShredModel
     // （源码审计——SwiftUI `.onReceive` 在单测宿主无场景可挂载）。
     func testRootViewRoutesNotificationToDragToShredModel() throws {
         let rootView = URL(fileURLWithPath: #filePath)
@@ -48,8 +48,8 @@ final class DockDropRoutingTests: XCTestCase {
             .appendingPathComponent("../App/RootView.swift")
         let source = try String(contentsOf: rootView, encoding: .utf8)
         XCTAssertTrue(source.contains(
-            "NotificationCenter.default.publisher(for: .klarisOpenFiles)"),
-            "RootView 必须订阅 .klarisOpenFiles（Dock 拖放路由中段）")
+            "NotificationCenter.default.publisher(for: .novaatlasOpenFiles)"),
+            "RootView 必须订阅 .novaatlasOpenFiles（Dock 拖放路由中段）")
         XCTAssertTrue(source.contains("dragToShred.urlsDropped"),
             "RootView 必须把通知转发给 DragToShredModel.urlsDropped（全有全无末端）")
     }

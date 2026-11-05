@@ -17,7 +17,7 @@ import UniformTypeIdentifiers
 @MainActor
 public final class KMonitorSpotlightIndexer {
     /// Domain that groups all kMonitor items inside Spotlight's index.
-    public static let domainIdentifier = "app.kraftly.kmonitor.spotlight"
+    public static let domainIdentifier = "com.novaatlas.kmonitor.spotlight"
 
     public init() {}
 
@@ -50,12 +50,12 @@ public final class KMonitorSpotlightIndexer {
 
         // The app itself. Tapping it launches kMonitor.
         let appItem = CSSearchableItem(
-            uniqueIdentifier: "app.kraftly.kmonitor",
+            uniqueIdentifier: "com.novaatlas.kmonitor",
             domainIdentifier: Self.domainIdentifier,
             attributeSet: makeAttributes(
                 title: "kMonitor",
                 description: "Menu-bar metrics for CPU, memory, disk, and network.",
-                keywords: ["kmonitor", "kraftly", "monitor", "metrics"]
+                keywords: ["kmonitor", "novaatlas", "monitor", "metrics"]
             )
         )
         items.append(appItem)

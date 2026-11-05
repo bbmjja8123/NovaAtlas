@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A07E70B7EAD0D1D640F1D5C7"
-               BuildableName = "Klaris.app"
-               BlueprintName = "KlarisDirect"
+               BlueprintIdentifier = "6F67736851EDC70198565E46"
+               BuildableName = "NovaAtlas.app"
+               BlueprintName = "NovaAtlasDirect"
                ReferencedContainer = "container:kWise.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A07E70B7EAD0D1D640F1D5C7"
-            BuildableName = "Klaris.app"
-            BlueprintName = "KlarisDirect"
+            BlueprintIdentifier = "6F67736851EDC70198565E46"
+            BuildableName = "NovaAtlas.app"
+            BlueprintName = "NovaAtlasDirect"
             ReferencedContainer = "container:kWise.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A07E70B7EAD0D1D640F1D5C7"
-            BuildableName = "Klaris.app"
-            BlueprintName = "KlarisDirect"
+            BlueprintIdentifier = "6F67736851EDC70198565E46"
+            BuildableName = "NovaAtlas.app"
+            BlueprintName = "NovaAtlasDirect"
             ReferencedContainer = "container:kWise.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A07E70B7EAD0D1D640F1D5C7"
-            BuildableName = "Klaris.app"
-            BlueprintName = "KlarisDirect"
+            BlueprintIdentifier = "6F67736851EDC70198565E46"
+            BuildableName = "NovaAtlas.app"
+            BlueprintName = "NovaAtlasDirect"
             ReferencedContainer = "container:kWise.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

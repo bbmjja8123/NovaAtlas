@@ -70,7 +70,7 @@ struct QuickFreshWidgetEntryView: View {
 // MARK: - Widget Configuration
 
 struct QuickFreshWidget: Widget {
-    let kind = "app.kraftly.kfresh.widget.quick"
+    let kind = "com.novaatlas.kfresh.widget.quick"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: QuickFreshProvider()) { entry in

@@ -122,9 +122,9 @@ struct RootView: View {
         // ShredderView 内，未被绕过。
         .modifier(DragToShredOverlay(model: dragToShred))
         // Task 5（feature sprint）：Dock 图标拖放 —— AppDelegate 的 open 事件
-        // 经 `.klarisOpenFiles` 单向路由到同一 DragToShredModel（全有全无校验、
+        // 经 `.novaatlasOpenFiles` 单向路由到同一 DragToShredModel（全有全无校验、
         // onShredRequested → 粉碎窗 sheet，与整窗拖放完全同一条链）。
-        .onReceive(NotificationCenter.default.publisher(for: .klarisOpenFiles)) { note in
+        .onReceive(NotificationCenter.default.publisher(for: .novaatlasOpenFiles)) { note in
             guard let urls = note.userInfo?["urls"] as? [URL] else { return }
             _ = dragToShred.urlsDropped(urls)
         }

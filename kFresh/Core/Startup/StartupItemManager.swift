@@ -146,7 +146,7 @@ actor StartupItemManager: StartupItemManaging {
     }
 
     /// Move the launch item's plist into `~/Library/Application Support/
-    /// app.kraftly.kfresh/Backups/StartupItems/`. We do NOT modify the
+    /// com.novaatlas.kfresh/Backups/StartupItems/`. We do NOT modify the
     /// file content — callers trust the backup location to be a full
     /// reversible copy.
     func remove(_ item: StartupItem) async throws {
@@ -248,7 +248,7 @@ actor StartupItemManager: StartupItemManaging {
     private func backupDirectory() -> URL {
         URL(fileURLWithPath: NSHomeDirectory())
             .appendingPathComponent("Library/Application Support")
-            .appendingPathComponent("app.kraftly.kfresh")
+            .appendingPathComponent("com.novaatlas.kfresh")
             .appendingPathComponent("Backups")
             .appendingPathComponent("StartupItems")
     }

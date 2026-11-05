@@ -130,7 +130,7 @@ final class StartupItemManagerTests: XCTestCase {
             // Best-effort: also wipe the backup (the manager creates the dir
             // under ~/Library/Application Support/.../Backups/StartupItems).
             let backupRoot = URL(fileURLWithPath: NSHomeDirectory())
-                .appendingPathComponent("Library/Application Support/app.kraftly.kfresh/Backups/StartupItems")
+                .appendingPathComponent("Library/Application Support/com.novaatlas.kfresh/Backups/StartupItems")
             let backup = backupRoot.appendingPathComponent(tmp.lastPathComponent)
             try? FileManager.default.removeItem(at: backup)
         }
@@ -139,7 +139,7 @@ final class StartupItemManagerTests: XCTestCase {
 
         XCTAssertFalse(FileManager.default.fileExists(atPath: tmp.path), "Original plist should be gone")
         let backupRoot = URL(fileURLWithPath: NSHomeDirectory())
-            .appendingPathComponent("Library/Application Support/app.kraftly.kfresh/Backups/StartupItems")
+            .appendingPathComponent("Library/Application Support/com.novaatlas.kfresh/Backups/StartupItems")
         let backup = backupRoot.appendingPathComponent(tmp.lastPathComponent)
         XCTAssertTrue(FileManager.default.fileExists(atPath: backup.path), "Backup should exist at expected path")
     }

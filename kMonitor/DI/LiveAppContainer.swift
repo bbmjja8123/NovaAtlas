@@ -28,7 +28,7 @@ public final class LiveAppContainer: AppContainerProtocol, @unchecked Sendable {
         self.appState = AppState()
         self.purchaseState = PurchaseState()
 
-        let defaults = UserDefaults(suiteName: "group.app.kraftly.shared") ?? .standard
+        let defaults = UserDefaults(suiteName: "group.com.novaatlas.shared") ?? .standard
         self.preferences = PreferencesRepository(defaults: defaults)
         self.metricsRepository = MetricsRepository(defaults: defaults)
 
@@ -36,7 +36,7 @@ public final class LiveAppContainer: AppContainerProtocol, @unchecked Sendable {
         do {
             stack = try CoreDataStack(
                 inMemory: false,
-                appGroupIdentifier: "group.app.kraftly.shared"
+                appGroupIdentifier: "group.com.novaatlas.shared"
             )
         } catch {
             // Unsigned development builds may not have access to the App Group.
@@ -75,7 +75,7 @@ public final class LiveAppContainer: AppContainerProtocol, @unchecked Sendable {
         ]
         self.aggregator = MetricsAggregator(monitors: monitors, strategy: SamplingStrategy())
         self.storeManager = StoreManager(
-            productID: "app.kraftly.kmonitor.pro",
+            productID: "com.novaatlas.kmonitor.pro",
             purchaseState: purchaseState
         )
         self.diagnosticsExporter = DiagnosticsExporter()

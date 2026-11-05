@@ -30,7 +30,7 @@ final class AppSourceClassifierTests: XCTestCase {
     func testMASApp() throws {
         // Create a temp directory simulating an App Store app with receipt
         let tmpDir = FileManager.default.temporaryDirectory
-            .appendingPathComponent("com.kraftly.mastest")
+            .appendingPathComponent("com.novaatlas.mastest")
         // `removeItem` throws when the directory does not exist (which is the
         // common case on first run). Only remove if present so the test is
         // idempotent across runs without a tearDown.
@@ -46,7 +46,7 @@ final class AppSourceClassifierTests: XCTestCase {
 
         let result = AppCatalogService.classifySource(
             url: tmpDir,
-            bundleID: "com.kraftly.MASApp"
+            bundleID: "com.novaatlas.MASApp"
         )
         XCTAssertEqual(result, .mas)
 

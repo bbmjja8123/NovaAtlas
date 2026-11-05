@@ -72,7 +72,7 @@ struct AppUsageWidgetEntryView: View {
 // MARK: - Widget Configuration
 
 struct AppUsageWidget: Widget {
-    let kind = "app.kraftly.kfresh.widget.usage"
+    let kind = "com.novaatlas.kfresh.widget.usage"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: AppUsageProvider()) { entry in

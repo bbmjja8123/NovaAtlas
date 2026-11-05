@@ -14,7 +14,7 @@ struct kWiseWidgetBundle: WidgetBundle {
     var body: some Widget {
         kWiseDiskWidget()
         if #available(macOS 26.0, *) {
-            KlarisQuickCleanControl()
+            NovaAtlasQuickCleanControl()
         }
     }
 }
@@ -76,7 +76,7 @@ struct DiskUsageWidgetView: View {
                 .foregroundStyle(.secondary)
         }
         .padding(4)
-        .widgetURL(URL(string: "klaris://smartcare"))
+        .widgetURL(URL(string: "novaatlas://smartcare"))
     }
 
     private func content(snapshot: WidgetSnapshot, disk: WidgetSnapshot.DiskInfo) -> some View {
@@ -119,7 +119,7 @@ struct DiskUsageWidgetView: View {
             }
         }
         .padding(4)
-        .widgetURL(URL(string: "klaris://smartcare"))
+        .widgetURL(URL(string: "novaatlas://smartcare"))
     }
 }
 
@@ -130,7 +130,7 @@ struct DiskUsageWidgetView: View {
 /// `AppCoordinator`. The whole widget surface also deep-links via `widgetURL`.
 struct kWiseDiskWidget: Widget {
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: "app.kraftly.klaris.widget", provider: DiskUsageProvider()) { entry in
+        StaticConfiguration(kind: "com.novaatlas.novaatlas.widget", provider: DiskUsageProvider()) { entry in
             DiskUsageWidgetView(entry: entry)
         }
         .configurationDisplayName(String(localized: String.LocalizationValue("widget.config.displayName")))
@@ -148,7 +148,7 @@ struct kWiseDiskWidget: Widget {
 /// 用户照常只用桌面 widget。
 ///
 /// Action reuses `RunSmartCareIntent` (the same AppIntent the interactive
-/// desktop widget button uses): it deep-links `klaris://smartcare` and the
+/// desktop widget button uses): it deep-links `novaatlas://smartcare` and the
 /// app's `AppCoordinator` routes it onto the anatomy canvas. One navigation
 /// authority, zero duplication.
 ///
@@ -157,18 +157,18 @@ struct kWiseDiskWidget: Widget {
 /// widget-local single-key catalog is what actually resolves in Control
 /// Center (the key is mirrored into the app catalog for audit parity).
 @available(macOS 26.0, *)
-struct KlarisQuickCleanControl: ControlWidget {
+struct NovaAtlasQuickCleanControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
         // On macOS the configuration modifiers (displayName/description) live
         // on `ControlWidgetConfiguration`, so the button template must be
         // wrapped in a `StaticControlConfiguration` — the bare-button chain
         // from the task brief does not compile on this SDK.
-        StaticControlConfiguration(kind: "app.kraftly.klaris.control.quickclean") {
+        StaticControlConfiguration(kind: "com.novaatlas.novaatlas.control.quickclean") {
             ControlWidgetButton(action: RunSmartCareIntent()) {
                 Label(String(localized: String.LocalizationValue("widget.control.quickClean")), systemImage: "sparkles")
             }
         }
-        .displayName("Klaris")
+        .displayName("NovaAtlas")
         // `ControlWidgetConfiguration.description` takes a
         // `LocalizedStringResource` on this SDK (a `String` does not convert),
         // so the key resolves through the widget-local catalog directly.

@@ -19,7 +19,7 @@ final class AppIntentsSurfaceTests: XCTestCase {
     }
 
     func testShortcutsProviderRegistered() {
-        let src = source("Intents/KlarisShortcuts.swift")
+        let src = source("Intents/NovaAtlasShortcuts.swift")
         XCTAssertTrue(src.contains("AppShortcutsProvider"), "Spotlight/Siri 入口必须注册")
         XCTAssertTrue(src.contains("ScanIntent") && src.contains("CleanCacheIntent")
                       && src.contains("AskStatusIntent"), "三个核心 intent 上架")

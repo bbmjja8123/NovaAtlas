@@ -45,7 +45,7 @@ final class AppStateTests: XCTestCase {
     }
 
     /// v2.0 Phase 2: the rail was fixed at six entries and never grew.
-    /// P2 T1 (Klaris 单一主画布)：rail 收敛至 3 项；P2 T9 起与 allCases 恒等。
+    /// P2 T1 (NovaAtlas 单一主画布)：rail 收敛至 3 项；P2 T9 起与 allCases 恒等。
     func test_NavigationItem_railItems() {
         XCTAssertEqual(AppState.NavigationItem.railItems, [
             .anatomy, .history, .settings

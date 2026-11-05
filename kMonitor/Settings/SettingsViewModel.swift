@@ -292,9 +292,9 @@ public final class SettingsViewModel: ObservableObject {
     }
 
     /// Public so views can render the URLs as text labels when needed.
-    public static let privacyPolicyURL: URL = URL(string: "https://kraftly.app/kmonitor/privacy")!
-    public static let supportURL: URL = URL(string: "https://kraftly.app/kmonitor/support")!
-    public static let licensesURL: URL = URL(string: "https://kraftly.app/kmonitor/licenses")!
+    public static let privacyPolicyURL: URL = URL(string: "https://novaatlas.app/kmonitor/privacy")!
+    public static let supportURL: URL = URL(string: "https://novaatlas.app/kmonitor/support")!
+    public static let licensesURL: URL = URL(string: "https://novaatlas.app/kmonitor/licenses")!
 
     // MARK: - PurchaseState observation
 
@@ -340,7 +340,7 @@ public final class SettingsViewModel: ObservableObject {
 /// paths). All methods are no-ops so the views still render without
 /// touching StoreKit.
 public final class NoopStoreManager: StoreManagerProtocol, @unchecked Sendable {
-    public let productID: String = "app.kraftly.kmonitor.pro"
+    public let productID: String = "com.novaatlas.kmonitor.pro"
 
     public init() {}
 

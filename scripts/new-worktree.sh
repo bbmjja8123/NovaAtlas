@@ -34,7 +34,7 @@ WT_PATH="/Users/torsys/Documents/aicoding/${APP}"
 
 # Pre-flight: source repo
 if ! git rev-parse --git-dir >/dev/null 2>&1; then
-    echo "error: must run from inside the Kraftly git repo" >&2
+    echo "error: must run from inside the NovaAtlas git repo" >&2
     exit 66
 fi
 

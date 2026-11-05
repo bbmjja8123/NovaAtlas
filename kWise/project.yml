@@ -1,6 +1,6 @@
 name: kWise
 options:
-  bundleIdPrefix: app.kraftly
+  bundleIdPrefix: app.novaatlas
   deploymentTarget:
     macOS: "13.0"
   xcodeVersion: "26.0"
@@ -32,7 +32,7 @@ targets:
   kWise:
     type: application
     platform: macOS
-    productName: Klaris
+    productName: NovaAtlas
     sources:
       - path: .
         excludes:
@@ -48,9 +48,9 @@ targets:
         buildPhase: none
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.klaris
+        PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.novaatlas
         INFOPLIST_FILE: Info.plist
-        PRODUCT_NAME: Klaris
+        PRODUCT_NAME: NovaAtlas
         PRODUCT_MODULE_NAME: kWise
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) DISTRIBUTION_MAS"
       configs:
@@ -80,10 +80,10 @@ targets:
   # real home directory (Full Disk Access) is scannable. Shares bundle ID,
   # Info.plist and deep-link scheme with the MAS target (product decision:
   # one product, two distribution channels, not co-installable).
-  KlarisDirect:
+  NovaAtlasDirect:
     type: application
     platform: macOS
-    productName: Klaris
+    productName: NovaAtlas
     sources:
       - path: .
         excludes:
@@ -99,15 +99,15 @@ targets:
         buildPhase: none
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.klaris
+        PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.novaatlas
         INFOPLIST_FILE: Info.plist
-        PRODUCT_NAME: Klaris
+        PRODUCT_NAME: NovaAtlas
         PRODUCT_MODULE_NAME: kWise
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) DISTRIBUTION_DIRECT"
         ENABLE_HARDENED_RUNTIME: YES
       configs:
         Debug:
-          PRODUCT_NAME: KlarisDirect
+          PRODUCT_NAME: NovaAtlasDirect
           CODE_SIGN_ENTITLEMENTS: ""
         Release:
           CODE_SIGN_ENTITLEMENTS: kWiseDirect.entitlements
@@ -138,7 +138,7 @@ targets:
       - Shared            # WidgetSnapshot feed + RunSmartCareIntent (dual-target)
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.klaris.widget
+        PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.novaatlas.widget
         PRODUCT_NAME: kWiseWidget
         INFOPLIST_FILE: Widgets/Info.plist
       configs:
@@ -167,7 +167,7 @@ targets:
       - FinderExtension
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.klaris.finder
+        PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.novaatlas.finder
         PRODUCT_NAME: kWiseFinder
         INFOPLIST_FILE: FinderExtension/Info.plist
       configs:
@@ -196,7 +196,7 @@ targets:
       - Tests
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.klaris.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.novaatlas.tests
         GENERATE_INFOPLIST_FILE: YES
     dependencies:
       - target: kWise
@@ -209,7 +209,7 @@ targets:
       - path: UITests
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.klaris.uitests
+        PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.novaatlas.uitests
         GENERATE_INFOPLIST_FILE: YES
     dependencies:
       - target: kWise
@@ -226,7 +226,7 @@ schemes:
     run:
       config: Debug
       # P1 T7 — local purchase testing against the non-consumable buyout.
-      storeKitConfiguration: Configuration/Klaris.storekit
+      storeKitConfiguration: Configuration/NovaAtlas.storekit
     test:
       config: Debug
       targets:
@@ -239,15 +239,15 @@ schemes:
         kWise: all
     run:
       config: Debug
-      storeKitConfiguration: Configuration/Klaris.storekit
+      storeKitConfiguration: Configuration/NovaAtlas.storekit
     test:
       config: Debug
       targets:
         - kWiseUITests
-  KlarisDirect:
+  NovaAtlasDirect:
     build:
       targets:
-        KlarisDirect: all
+        NovaAtlasDirect: all
     run:
       config: Debug
   kWiseWidget:

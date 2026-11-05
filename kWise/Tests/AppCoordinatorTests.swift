@@ -6,7 +6,7 @@ final class AppCoordinatorTests: XCTestCase {
     func test_handleDeepLink_scan_setsNavigation() {
         let appState = AppState()
         let coordinator = AppCoordinator(appState: appState)
-        let url = URL(string: "klaris://scan?path=%2FUsers%2Fme%2FDownloads")!
+        let url = URL(string: "novaatlas://scan?path=%2FUsers%2Fme%2FDownloads")!
         let result = coordinator.handleDeepLink(url)
         XCTAssertTrue(result)
         // P2 T9（spec §7 深链终态）：扫描是动作不是页面 —— Finder 扩展的
@@ -17,7 +17,7 @@ final class AppCoordinatorTests: XCTestCase {
     func test_handleDeepLink_unknownHost_returnsFalse() {
         let appState = AppState()
         let coordinator = AppCoordinator(appState: appState)
-        let url = URL(string: "klaris://unknown")!
+        let url = URL(string: "novaatlas://unknown")!
         let result = coordinator.handleDeepLink(url)
         XCTAssertFalse(result)
     }
@@ -33,29 +33,29 @@ final class AppCoordinatorTests: XCTestCase {
     func test_handleDeepLink_noHost_returnsFalse() {
         let appState = AppState()
         let coordinator = AppCoordinator(appState: appState)
-        let url = URL(string: "klaris://")!
+        let url = URL(string: "novaatlas://")!
         let result = coordinator.handleDeepLink(url)
         XCTAssertFalse(result)
     }
 
-    /// P1 T1: SmartCare 降级后 `klaris://smartcare`（Widget 一键清理按钮、
+    /// P1 T1: SmartCare 降级后 `novaatlas://smartcare`（Widget 一键清理按钮、
     /// 通知深链）应落在解剖首屏，而不是已下线的 Smart Care 页（R1）。
     func test_handleDeepLink_smartCare_opensAnatomy() {
         let appState = AppState()
         let coordinator = AppCoordinator(appState: appState)
-        let url = URL(string: "klaris://smartcare")!
+        let url = URL(string: "novaatlas://smartcare")!
         let result = coordinator.handleDeepLink(url)
         XCTAssertTrue(result)
         XCTAssertEqual(appState.navigation, .anatomy,
                        "SmartCare 降级：深链与 Widget 按钮应落在解剖首屏（R1）")
     }
 
-    /// P2 T1: DiskHealthCard 已内嵌解剖画布（spec §7）——`klaris://health`
+    /// P2 T1: DiskHealthCard 已内嵌解剖画布（spec §7）——`novaatlas://health`
     /// 深链落首屏 `.anatomy`，不再跳独立磁盘健康详情页。
     func test_handleDeepLink_health_opensAnatomy() {
         let appState = AppState()
         let coordinator = AppCoordinator(appState: appState)
-        let url = URL(string: "klaris://health")!
+        let url = URL(string: "novaatlas://health")!
         let result = coordinator.handleDeepLink(url)
         XCTAssertTrue(result)
         XCTAssertEqual(appState.navigation, .anatomy,
@@ -66,7 +66,7 @@ final class AppCoordinatorTests: XCTestCase {
     func test_handleDeepLink_history_opensHistory() {
         let appState = AppState()
         let coordinator = AppCoordinator(appState: appState)
-        let url = URL(string: "klaris://history")!
+        let url = URL(string: "novaatlas://history")!
         let result = coordinator.handleDeepLink(url)
         XCTAssertTrue(result)
         XCTAssertEqual(appState.navigation, .history)
@@ -76,7 +76,7 @@ final class AppCoordinatorTests: XCTestCase {
     func test_handleDeepLink_settings_opensSettings() {
         let appState = AppState()
         let coordinator = AppCoordinator(appState: appState)
-        XCTAssertTrue(coordinator.handleDeepLink(URL(string: "klaris://settings")!))
+        XCTAssertTrue(coordinator.handleDeepLink(URL(string: "novaatlas://settings")!))
         XCTAssertEqual(appState.navigation, .settings)
     }
 
@@ -91,7 +91,7 @@ final class AppCoordinatorTests: XCTestCase {
                      "tools", "spacemap",
                      "duplicates", "largefiles", "photoclean", "maintenance"] {
             let before = appState.navigation
-            XCTAssertFalse(coordinator.handleDeepLink(URL(string: "klaris://\(host)")!),
+            XCTAssertFalse(coordinator.handleDeepLink(URL(string: "novaatlas://\(host)")!),
                            "退役深链 \(host) 应未处理")
             XCTAssertEqual(appState.navigation, before,
                            "退役深链 \(host) 不得改变导航")
@@ -112,7 +112,7 @@ final class AppCoordinatorTests: XCTestCase {
 
     func test_handleDeepLink_withNilAppState_returnsTrue() {
         let coordinator = AppCoordinator(appState: nil)
-        let url = URL(string: "klaris://scan")!
+        let url = URL(string: "novaatlas://scan")!
         let result = coordinator.handleDeepLink(url)
         XCTAssertTrue(result)
     }

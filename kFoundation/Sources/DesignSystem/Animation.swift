@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Kraftly 统一动效 tokens。
+/// NovaAtlas 统一动效 tokens。
 ///
 /// 4 款 App（kWise / kMonitor / kSift / kFresh）的所有 SwiftUI 动画
 /// 必须从此处引用时长与缩放系数，禁止在各 App 内硬编码数值。

@@ -3,7 +3,7 @@ import Foundation
 struct ResultsCommand {
     func execute(_ args: [String]) {
         let format = args.contains("--json") ? "json" : "text"
-        let connection = NSXPCConnection(serviceName: "app.kraftly.kdupe.xpc")
+        let connection = NSXPCConnection(serviceName: "com.novaatlas.kdupe.xpc")
         connection.remoteObjectInterface = NSXPCInterface(with: XPCDuplicateServiceProtocol.self)
         connection.resume()
         let service = connection.remoteObjectProxy as? XPCDuplicateServiceProtocol

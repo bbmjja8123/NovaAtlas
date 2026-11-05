@@ -27,7 +27,7 @@ public final class FDAGuideController: ObservableObject {
 
     /// `UserDefaults` key recording that onboarding finished.
     ///
-    /// Namespaced to kFresh so the four Kraftly apps cannot collide if they
+    /// Namespaced to kFresh so the four NovaAtlas apps cannot collide if they
     /// ever share a defaults suite.
     public static let onboardingKey = "kFresh.hasCompletedOnboarding"
 

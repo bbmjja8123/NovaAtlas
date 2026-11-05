@@ -1,6 +1,6 @@
 # kMonitor — App Review Notes
 
-**Bundle ID:** `app.kraftly.kmonitor`
+**Bundle ID:** `com.novaatlas.kmonitor`
 **App Store Category:** Developer Tools / Utilities
 **Submission Type:** Initial release
 
@@ -16,7 +16,7 @@ kMonitor is a **read-only system monitor** that surfaces CPU, memory, disk, netw
 - **Network access:** DISABLED (`com.apple.security.network.client` = false, `com.apple.security.network.server` = false). The app makes **zero** outbound network requests.
 - **File access:** No `user-selected` file entitlement is requested. The app does **not** open arbitrary files and does **not** prompt the user to grant file access.
 - **TCC permissions required:** **NONE.** kMonitor reads only the system APIs documented below; it never touches the user's Contacts, Calendars, Photos, Microphone, Camera, Reminders, or location.
-- **App Group:** `group.app.kraftly.shared` is declared in the entitlement (`com.apple.security.application-groups`) so the app and its Widget / Live Activity / Intents extensions can share the JSON snapshot. The app group container is **not** exposed to the user; nothing inside it is ever uploaded.
+- **App Group:** `group.com.novaatlas.shared` is declared in the entitlement (`com.apple.security.application-groups`) so the app and its Widget / Live Activity / Intents extensions can share the JSON snapshot. The app group container is **not** exposed to the user; nothing inside it is ever uploaded.
 
 ## 3. Required-Reason API Usage
 
@@ -57,7 +57,7 @@ On **Intel Macs** with no SMC, the same sensors report `unavailable`. These stat
 
 ## 8. StoreKit / Pro Unlock
 
-Pro is unlocked through a **single non-consumable in-app purchase** (`app.kraftly.kmonitor.pro`, $7.99 USD one-time, no subscription). The purchase unlocks:
+Pro is unlocked through a **single non-consumable in-app purchase** (`com.novaatlas.kmonitor.pro`, $7.99 USD one-time, no subscription). The purchase unlocks:
 
 - History view (90-day rolling window)
 - Trend chart with sparkline

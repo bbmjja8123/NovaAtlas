@@ -117,7 +117,7 @@ internal actor DeepCleanEngine: DeepCleanEngining {
 
     /// Bundle identifier used for the batch backup and audit records so a
     /// deep-clean backup is distinguishable from an uninstall backup.
-    static let backupBundleID = "app.kraftly.kfresh.deepclean"
+    static let backupBundleID = "com.novaatlas.kfresh.deepclean"
 
     private let fileManager: FileManager
     private let backupManager: BackupManager

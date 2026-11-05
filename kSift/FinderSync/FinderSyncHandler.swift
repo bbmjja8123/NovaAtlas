@@ -12,7 +12,7 @@ import Foundation
 /// within a sandboxed App Group.
 private enum FinderSyncContract {
     static let pendingPathKey = "ksift.finderSync.pendingPath"
-    static let notificationName = CFNotificationName("com.kraftly.ksift.scanFolder" as CFString)
+    static let notificationName = CFNotificationName("com.novaatlas.ksift.scanFolder" as CFString)
 }
 
 class FinderSyncHandler: FIFinderSync {
@@ -55,7 +55,7 @@ class FinderSyncHandler: FIFinderSync {
         // Stash the path in the App Group suite the main app reads from.
         // Falls back to the standard defaults if the suite is unavailable
         // (e.g., running outside the App Group container).
-        let defaults = UserDefaults(suiteName: "group.app.kraftly.ksift")
+        let defaults = UserDefaults(suiteName: "group.com.novaatlas.ksift")
             ?? .standard
         defaults.set(url.path, forKey: FinderSyncContract.pendingPathKey)
         // Bare Darwin notification — the main app's AppCoordinator reads

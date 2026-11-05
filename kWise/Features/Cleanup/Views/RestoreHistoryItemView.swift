@@ -271,7 +271,7 @@ struct RestoreHistoryItemView_Previews: PreviewProvider {
         item.path = fakeURL.path
         item.size = 1_482_309_120
         item.cleanedAt = Date()
-        item.bundleID = "app.kraftly.klaris"
+        item.bundleID = "com.novaatlas.novaatlas"
         item.risk = .recommended
         return RestoreHistoryItemView(batch: [item], onClose: {})
             .preferredColorScheme(.dark)

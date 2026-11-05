@@ -128,7 +128,7 @@ public actor BackupManager {
 
     /// Creates a backup manager rooted at `rootURL`. If `rootURL` is `nil`,
     /// the manager uses the production default:
-    /// `applicationSupportDirectory/app.kraftly.kfresh/Backups`.
+    /// `applicationSupportDirectory/com.novaatlas.kfresh/Backups`.
     ///
     /// - Parameter rootURL: Override location for backup storage. Tests
     ///   pass a unique `temporaryDirectory.appendingPathComponent(...)`
@@ -147,9 +147,9 @@ public actor BackupManager {
             // construction. The caller will see the failure on the first
             // backup call when the disk write throws.
             return URL(fileURLWithPath: NSTemporaryDirectory())
-                .appendingPathComponent("app.kraftly.kfresh/Backups")
+                .appendingPathComponent("com.novaatlas.kfresh/Backups")
         }
-        return appSupport.appendingPathComponent("app.kraftly.kfresh/Backups")
+        return appSupport.appendingPathComponent("com.novaatlas.kfresh/Backups")
     }
 
     /// Public read-only alias of ``defaultRootURL()`` so callers outside

@@ -8,7 +8,7 @@ import Foundation
 /// `Configuration.storekit` (StoreKit local testing).
 enum StoreProduct: String, CaseIterable, Sendable {
     /// One-time (non-consumable) Pro unlock.
-    case proUnlock = "app.kraftly.kfresh.pro"
+    case proUnlock = "com.novaatlas.kfresh.pro"
 }
 
 // MARK: - Entitlement State

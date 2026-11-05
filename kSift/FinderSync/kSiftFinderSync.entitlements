@@ -8,6 +8,6 @@
          write the picked folder path into shared UserDefaults and the main
          app can read it back when the Darwin notification fires. -->
     <key>com.apple.security.application-groups</key>
-    <array><string>group.app.kraftly.ksift</string></array>
+    <array><string>group.com.novaatlas.ksift</string></array>
 </dict>
 </plist>

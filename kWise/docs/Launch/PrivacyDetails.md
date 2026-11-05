@@ -1,7 +1,7 @@
-# App Privacy Details — Klaris（app.kraftly.klaris）
+# App Privacy Details — NovaAtlas（com.novaatlas.novaatlas）
 
 > Apple requires every App Store listing to declare what data the app collects.
-> Klaris collects NOTHING. Every question on Apple's privacy nutrition label is answered "Data Not Collected."
+> NovaAtlas collects NOTHING. Every question on Apple's privacy nutrition label is answered "Data Not Collected."
 >
 > 2026-10-25 更新：对齐 P0 bundle 迁移 + P3 双渠道 + 隐私清单实际落点。
 
@@ -25,10 +25,10 @@ App Store Connect → App Privacy → for each category, answer "Data Not Collec
 - Other Data: Data Not Collected
 
 ## Privacy Policy URL
-https://kraftly.app/privacy
+https://novaatlas.app/privacy
 
 The policy must:
-1. State explicitly: "Klaris does not collect any data."
+1. State explicitly: "NovaAtlas does not collect any data."
 2. Explain the file-access model per channel:
    - Mac App Store edition: sandboxed; the user grants the home folder once
      via NSOpenPanel (security-scoped bookmark). Full Disk Access is NOT

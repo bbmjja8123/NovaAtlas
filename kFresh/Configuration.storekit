@@ -18,7 +18,7 @@
           "locale" : "zh_CN"
         }
       ],
-      "productID" : "app.kraftly.kfresh.pro",
+      "productID" : "com.novaatlas.kfresh.pro",
       "referenceName" : "kFresh Pro Unlock",
       "type" : "NonConsumable"
     }

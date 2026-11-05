@@ -1,6 +1,6 @@
 name: kSift
 options:
-  bundleIdPrefix: app.kraftly
+  bundleIdPrefix: app.novaatlas
   deploymentTarget:
     macOS: "13.0"
   xcodeVersion: "15.0"
@@ -39,7 +39,7 @@ targets:
         type: file
         buildPhase: none
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.ksift
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.ksift
       PRODUCT_NAME: kSift
       INFOPLIST_FILE: Info.plist
       CODE_SIGN_STYLE: Automatic
@@ -71,7 +71,7 @@ targets:
     settings:
       base:
         PRODUCT_NAME: kSiftTests
-        PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.ksift.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.ksift.tests
       configs:
         Debug:
           TEST_HOST: "$(BUILT_PRODUCTS_DIR)/kSift.app/Contents/MacOS/kSift"
@@ -89,7 +89,7 @@ targets:
     sources:
       - FinderSync
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.ksift.finder-sync
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.ksift.finder-sync
       PRODUCT_NAME: kSiftFinderSync
       INFOPLIST_FILE: FinderSync/Info.plist
       CODE_SIGN_ENTITLEMENTS: FinderSync/kSiftFinderSync.entitlements

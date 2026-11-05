@@ -11,7 +11,7 @@
             <key>Display Name</key>
             <string>kSift Pro</string>
             <key>ID</key>
-            <string>app.kraftly.ksift.full_license</string>
+            <string>com.novaatlas.ksift.full_license</string>
             <key>Type</key>
             <string>Non-Consumable</string>
             <key>Price</key>

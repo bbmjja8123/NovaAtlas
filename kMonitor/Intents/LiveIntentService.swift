@@ -121,10 +121,10 @@ public final class LiveIntentService: IntentServiceProtocol, @unchecked Sendable
 
 /// Notification names used by the intents extension to talk to the main app.
 public extension Notification.Name {
-    static let kMonitorIntentStartMonitoring = Notification.Name("app.kraftly.kmonitor.intent.start")
-    static let kMonitorIntentStopMonitoring = Notification.Name("app.kraftly.kmonitor.intent.stop")
-    static let kMonitorIntentOpenDashboard = Notification.Name("app.kraftly.kmonitor.intent.openDashboard")
-    static let kMonitorIntentExportDiagnostics = Notification.Name("app.kraftly.kmonitor.intent.export")
+    static let kMonitorIntentStartMonitoring = Notification.Name("com.novaatlas.kmonitor.intent.start")
+    static let kMonitorIntentStopMonitoring = Notification.Name("com.novaatlas.kmonitor.intent.stop")
+    static let kMonitorIntentOpenDashboard = Notification.Name("com.novaatlas.kmonitor.intent.openDashboard")
+    static let kMonitorIntentExportDiagnostics = Notification.Name("com.novaatlas.kmonitor.intent.export")
 }
 
 /// Errors thrown by the intents service.

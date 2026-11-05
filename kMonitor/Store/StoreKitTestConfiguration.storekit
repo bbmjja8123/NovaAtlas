@@ -12,7 +12,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "app.kraftly.kwatch.pro",
+      "productID" : "com.novaatlas.kwatch.pro",
       "referenceName" : "kWatch Pro",
       "type" : "NonConsumable"
     }

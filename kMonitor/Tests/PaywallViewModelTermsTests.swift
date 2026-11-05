@@ -8,7 +8,7 @@ final class PaywallViewModelTermsTests: XCTestCase {
     private func makeViewModel(isPro: Bool = false) -> (PaywallViewModel, StubStoreManager, PurchaseState) {
         let purchaseState = PurchaseState()
         let storeManager = StubStoreManager(
-            productID: "app.kraftly.kmonitor.pro",
+            productID: "com.novaatlas.kmonitor.pro",
             products: [],
             isPro: isPro,
             purchaseState: purchaseState

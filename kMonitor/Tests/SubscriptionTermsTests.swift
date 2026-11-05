@@ -47,7 +47,7 @@ final class SubscriptionTermsTests: XCTestCase {
 
     /// Privacy + Support URLs are non-empty and point at the same host.
     func testURLsAreStable() {
-        XCTAssertEqual(SubscriptionTerms.privacyPolicyURL.host, "kraftly.app")
-        XCTAssertEqual(SubscriptionTerms.supportURL.host, "kraftly.app")
+        XCTAssertEqual(SubscriptionTerms.privacyPolicyURL.host, "novaatlas.app")
+        XCTAssertEqual(SubscriptionTerms.supportURL.host, "novaatlas.app")
     }
 }

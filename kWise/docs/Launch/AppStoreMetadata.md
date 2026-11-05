@@ -1,4 +1,4 @@
-# Klaris — App Store Connect Metadata
+# NovaAtlas — App Store Connect Metadata
 
 > ⚠️ 2026-10-25 修订：身份与定价字段已对齐 P0 迁移 + P1 买断制 + P3 双渠道。
 > **描述正文（下方 EN/zh/ja 长文案）仍是 v1 旧模块叙事，提审前需按 P2
@@ -13,7 +13,7 @@
 > Re-verify character counts (App Store Connect validates live).
 
 ## App Name
-Klaris
+NovaAtlas
 
 ## Subtitle (30 chars max, EN)
 The Smarter Mac Disk Cleaner
@@ -25,10 +25,10 @@ The Smarter Mac Disk Cleaner
 賢い Mac ディスククリーナー
 
 ## Bundle ID
-app.kraftly.klaris
+com.novaatlas.novaatlas
 
 ## SKU
-klaris-mas-2026
+novaatlas-mas-2026
 
 ## Primary Locale
 English (en-US)
@@ -93,7 +93,7 @@ ONE-TIME BUYOUT ($9.90 — no subscription, no trial)
 • File shredder
 
 PRIVACY FIRST
-kWise collects nothing. The App Privacy nutrition label on this listing is empty. Read our privacy policy at kraftly.app/privacy.
+kWise collects nothing. The App Privacy nutrition label on this listing is empty. Read our privacy policy at novaatlas.app/privacy.
 
 REQUIREMENTS
 macOS 13.0 or later. Full Disk Access required for system cache cleanup (Apple-mandated, not optional). Apple Silicon or Intel.
@@ -127,18 +127,18 @@ Add all 12 as ASC metadata localizations (name/subtitle/keywords/privacy at
 minimum); description body may roll out progressively — en-US is authoritative.
 
 ## Support URL
-https://kraftly.app/support/klaris
+https://novaatlas.app/support/novaatlas
 
 ## Marketing URL (optional)
-https://kraftly.app/klaris
+https://novaatlas.app/novaatlas
 
 ## Version 1.0.0 — What's New (4000 chars max, EN)
 First release. Smart 4-level scan, risk-graded cleanup with rehearsal preview and 30-day undo, drill-down Quick Look, Dock drag-to-shred, App Shortcuts (Spotlight/Siri), Control Center quick-clean control (macOS 26+), VoiceOver accessibility, menu bar widget, Finder extension — fully localized in 12 languages (English, Simplified & Traditional Chinese, Japanese, Korean, German, French, Spanish, Portuguese-BR, Italian, Russian, Arabic).
 
 ## Copyright
-© 2026 Kraftly Inc.
+© 2026 NovaAtlas Inc.
 
 ## Pricing
 Free download; single non-consumable buyout IAP
-`app.kraftly.klaris.buyout`: US $9.90 · CN ¥68（其余区域 App Store Connect
+`com.novaatlas.novaatlas.buyout`: US $9.90 · CN ¥68（其余区域 App Store Connect
 tier 对齐，无订阅、无试用、无额度）

@@ -2,7 +2,7 @@
 //
 // 卸载前残留备份 (v2.3 Phase 4) — wraps AppCatalogCore's BackupManager with
 // a kWise-scoped root. The engine's default root is kFresh-branded
-// ("app.kraftly.kfresh/Backups") — kWise MUST pass its own container path.
+// ("com.novaatlas.kfresh/Backups") — kWise MUST pass its own container path.
 //
 // BackupManager's manifest deliberately stores only relative paths
 // (portable across machines), so restore needs the original residue list.
@@ -19,7 +19,7 @@ actor UninstallBackupStore {
         let base = FileManager.default.urls(
             for: .applicationSupportDirectory, in: .userDomainMask
         ).first ?? FileManager.default.temporaryDirectory
-        return base.appendingPathComponent("app.kraftly.klaris/Backups", isDirectory: true)
+        return base.appendingPathComponent("com.novaatlas.novaatlas/Backups", isDirectory: true)
     }
 
     /// Sidecar encoding — original residue locations per backup.

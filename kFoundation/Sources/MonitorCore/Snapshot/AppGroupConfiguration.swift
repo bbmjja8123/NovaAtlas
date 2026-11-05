@@ -3,7 +3,7 @@ import Foundation
 /// App Group identifier shared across the app, Widget, Live Activity, and Intents
 /// extensions. Must match the `com.apple.security.application-groups` entitlement.
 public enum AppGroupConfiguration {
-    public static let identifier = "group.app.kraftly.shared"
+    public static let identifier = "group.com.novaatlas.shared"
 
     /// Returns the shared container URL. Returns nil if the App Group is not provisioned
     /// (unsigned dev builds); callers must handle this gracefully.

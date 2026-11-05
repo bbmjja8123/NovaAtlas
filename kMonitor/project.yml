@@ -1,6 +1,6 @@
 name: kMonitor
 options:
-  bundleIdPrefix: app.kraftly
+  bundleIdPrefix: app.novaatlas
   deploymentTarget:
     macOS: "13.0"
   xcodeVersion: "15.0"
@@ -26,7 +26,7 @@ targets:
           - "kMonitorControlWidget/**"
           - "Intents/Info.plist"
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.kmonitor
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.kmonitor
       INFOPLIST_FILE: Info.plist
       CODE_SIGN_STYLE: Automatic
       DEVELOPMENT_TEAM: ""
@@ -50,7 +50,7 @@ targets:
     sources:
       - kMonitorWidget
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.kmonitor.widget
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.kmonitor.widget
       MACOSX_DEPLOYMENT_TARGET: "13.0"
       SWIFT_VERSION: "5.9"
       GENERATE_INFOPLIST_FILE: YES
@@ -71,7 +71,7 @@ targets:
           - "Info.plist"
     settings:
       INFOPLIST_FILE: Intents/Info.plist
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.kmonitor.intents
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.kmonitor.intents
       MACOSX_DEPLOYMENT_TARGET: "13.0"
       SWIFT_VERSION: "5.9"
       GENERATE_INFOPLIST_FILE: YES
@@ -89,7 +89,7 @@ targets:
     sources:
       - Tests
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.kmonitor.tests
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.kmonitor.tests
       MACOSX_DEPLOYMENT_TARGET: "13.0"
       SWIFT_VERSION: "5.9"
     dependencies:
@@ -108,7 +108,7 @@ targets:
     sources:
       - UITests
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.kmonitor.uitests
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.kmonitor.uitests
       MACOSX_DEPLOYMENT_TARGET: "13.0"
       SWIFT_VERSION: "5.9"
     dependencies:

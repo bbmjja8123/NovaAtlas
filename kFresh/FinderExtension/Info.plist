@@ -7,7 +7,7 @@
     <key>CFBundleDisplayName</key>
     <string>kFresh Finder Extension</string>
     <key>CFBundleIdentifier</key>
-    <string>app.kraftly.kfresh.finder-sync</string>
+    <string>com.novaatlas.kfresh.finder-sync</string>
     <key>CFBundlePackageType</key>
     <string>XPC!</string>
     <key>NSExtension</key>

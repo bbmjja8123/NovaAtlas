@@ -1,4 +1,4 @@
-// kWise/Intents/KlarisShortcuts.swift
+// kWise/Intents/NovaAtlasShortcuts.swift
 //
 // App Shortcuts 注册（Task 10）：Spotlight 顶部结果 / Siri / 快捷指令
 // 免配置入口。短语三语（en/zh-Hans/ja——匹配助手意图表的三语先例）。
@@ -32,7 +32,7 @@ struct AskStatusIntent: AppIntent {
     }
 }
 
-struct KlarisShortcuts: AppShortcutsProvider {
+struct NovaAtlasShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         AppShortcut(intent: ScanIntent(),
                     phrases: ["Scan with \(.applicationName)", "用\(.applicationName)扫描", "\(.applicationName)でスキャン"],

@@ -40,7 +40,7 @@ struct AboutView: View {
                 .multilineTextAlignment(.center)
 
             // Copyright
-            Text("Copyright © 2026 Kraftly. All rights reserved.")
+            Text("Copyright © 2026 NovaAtlas. All rights reserved.")
                 .font(.caption)
                 .foregroundColor(.textSecondary)
 

@@ -11,7 +11,7 @@ import Combine
 /// listener). `StoreManager` is annotated `@MainActor`, so this conformance
 /// declaration is more about documentation than a compiler requirement.
 public protocol StoreManagerProtocol: AnyObject, Sendable {
-    /// The App Store Connect product identifier, e.g. `app.kraftly.kmonitor.pro`.
+    /// The App Store Connect product identifier, e.g. `com.novaatlas.kmonitor.pro`.
     var productID: String { get }
 
     /// Products currently loaded from the App Store. Empty until the
@@ -83,7 +83,7 @@ public final class StoreManager: StoreManagerProtocol, ObservableObject, @unchec
     /// `client` talks to Apple's StoreKit 2 APIs; tests substitute
     /// `StubStoreKitClient` via the second parameter.
     public init(
-        productID: String = "app.kraftly.kmonitor.pro",
+        productID: String = "com.novaatlas.kmonitor.pro",
         purchaseState: PurchaseState,
         client: any StoreKitClient = LiveStoreKitClient()
     ) {
@@ -301,7 +301,7 @@ public final class StubStoreManager: StoreManagerProtocol, ObservableObject, @un
     private let purchaseState: PurchaseState?
 
     public init(
-        productID: String = "app.kraftly.kmonitor.pro",
+        productID: String = "com.novaatlas.kmonitor.pro",
         products: [Product] = [],
         isPro: Bool = false,
         purchaseState: PurchaseState? = nil

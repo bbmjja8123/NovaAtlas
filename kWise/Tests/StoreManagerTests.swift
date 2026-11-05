@@ -14,9 +14,9 @@ final class StoreManagerTests: XCTestCase {
     }
 
     /// P1 T7 — the commerce model is a single $9.90 non-consumable buyout
-    /// (`app.kraftly.klaris.buyout`), not the retired yearly subscription.
+    /// (`com.novaatlas.novaatlas.buyout`), not the retired yearly subscription.
     func test_storeManager_productIDIsBuyoutNonConsumable() {
-        XCTAssertEqual(StoreManager.productID, "app.kraftly.klaris.buyout")
+        XCTAssertEqual(StoreManager.productID, "com.novaatlas.novaatlas.buyout")
     }
 
     /// Non-consumable purchase result handling — outcomes that do NOT

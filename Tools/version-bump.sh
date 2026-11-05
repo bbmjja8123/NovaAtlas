@@ -1,6 +1,6 @@
 #!/bin/bash
 # Usage: ./version-bump.sh <new-version> [build-number]
-# Updates Klaris (kWise) version in kWise/project.yml (XcodeGen source of
+# Updates NovaAtlas (kWise) version in kWise/project.yml (XcodeGen source of
 # truth) and regenerates the Xcode project via kWise/scripts/generate.sh.
 # Every App Store upload needs a fresh build number.
 

@@ -87,7 +87,7 @@ struct SettingsView: View {
                 .foregroundColor(.textPrimary)
             Text("版本 1.0.0")
                 .foregroundColor(.textSecondary)
-            Text("Kraftly — Cleaner Mac tools, made with care.")
+            Text("NovaAtlas — Cleaner Mac tools, made with care.")
                 .font(.caption)
                 .foregroundColor(.textSecondary)
 

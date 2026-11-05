@@ -40,12 +40,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     /// 在 ShredderView 内，这里零绕过）。
     func application(_ application: NSApplication, open urls: [URL]) {
         NotificationCenter.default.post(
-            name: .klarisOpenFiles, object: nil, userInfo: ["urls": urls])
+            name: .novaatlasOpenFiles, object: nil, userInfo: ["urls": urls])
     }
 }
 
 /// Task 5（feature sprint）：Dock 拖放路由的唯一通知名。
 /// AppDelegate（open 事件）→ RootView（`.onReceive` → DragToShredModel）。
 extension Notification.Name {
-    static let klarisOpenFiles = Notification.Name("app.kraftly.klaris.openFiles")
+    static let novaatlasOpenFiles = Notification.Name("com.novaatlas.novaatlas.openFiles")
 }

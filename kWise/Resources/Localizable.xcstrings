@@ -29215,73 +29215,73 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "After granting the home folder, Klaris can find cleanable caches and leftovers."
+            "value": "After granting the home folder, NovaAtlas can find cleanable caches and leftovers."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ホームフォルダを許可すると、Klaris は清掃可能なキャッシュと残留を検出できます。"
+            "value": "ホームフォルダを許可すると、NovaAtlas は清掃可能なキャッシュと残留を検出できます。"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "授权主目录后，Klaris 才能发现可清理的缓存与残留。"
+            "value": "授权主目录后，NovaAtlas 才能发现可清理的缓存与残留。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "授權主目錄後，Klaris 才能找出可清理的快取與殘留。"
+            "value": "授權主目錄後，NovaAtlas 才能找出可清理的快取與殘留。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "홈 폴더를 허용해야 Klaris가 정리 가능한 캐시와 잔여 파일을 찾을 수 있습니다."
+            "value": "홈 폴더를 허용해야 NovaAtlas가 정리 가능한 캐시와 잔여 파일을 찾을 수 있습니다."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nach dem Erteilen des Zugriffs auf den Benutzerordner kann Klaris bereinigbare Caches und Restdateien finden."
+            "value": "Nach dem Erteilen des Zugriffs auf den Benutzerordner kann NovaAtlas bereinigbare Caches und Restdateien finden."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Une fois le dossier personnel accordé, Klaris peut repérer les caches et restants nettoyables."
+            "value": "Une fois le dossier personnel accordé, NovaAtlas peut repérer les caches et restants nettoyables."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tras conceder el acceso a la carpeta de inicio, Klaris puede encontrar cachés y residuos que se pueden limpiar."
+            "value": "Tras conceder el acceso a la carpeta de inicio, NovaAtlas puede encontrar cachés y residuos que se pueden limpiar."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Depois de conceder a pasta pessoal, o Klaris pode encontrar caches e resíduos limpáveis."
+            "value": "Depois de conceder a pasta pessoal, o NovaAtlas pode encontrar caches e resíduos limpáveis."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dopo aver concesso la cartella home, Klaris può trovare cache e residui pulibili."
+            "value": "Dopo aver concesso la cartella home, NovaAtlas può trovare cache e residui pulibili."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Лишь после предоставления доступа к домашней папке Klaris сможет находить кэши и остаточные файлы, которые можно очистить."
+            "value": "Лишь после предоставления доступа к домашней папке NovaAtlas сможет находить кэши и остаточные файлы, которые можно очистить."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "بعد منح الوصول إلى المجلد الرئيسي، يمكن لـ Klaris العثور على الذاكرات المؤقتة والبقايا القابلة للتنظيف."
+            "value": "بعد منح الوصول إلى المجلد الرئيسي، يمكن لـ NovaAtlas العثور على الذاكرات المؤقتة والبقايا القابلة للتنظيف."
           }
         }
       }
@@ -34395,7 +34395,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quit Klaris"
+            "value": "Quit NovaAtlas"
           }
         },
         "ja": {
@@ -34413,55 +34413,55 @@
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "結束 Klaris"
+            "value": "結束 NovaAtlas"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klaris 종료"
+            "value": "NovaAtlas 종료"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klaris beenden"
+            "value": "NovaAtlas beenden"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quitter Klaris"
+            "value": "Quitter NovaAtlas"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Salir de Klaris"
+            "value": "Salir de NovaAtlas"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Encerrar o Klaris"
+            "value": "Encerrar o NovaAtlas"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Esci da Klaris"
+            "value": "Esci da NovaAtlas"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Завершить Klaris"
+            "value": "Завершить NovaAtlas"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "إنهاء Klaris"
+            "value": "إنهاء NovaAtlas"
           }
         }
       }
@@ -35763,73 +35763,73 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The direct edition has no in-app purchase. Open the Mac App Store, search for Klaris, and unlock reclamation actions with a one-time purchase; scanning, attribution and the refusal list stay free forever in every edition."
+            "value": "The direct edition has no in-app purchase. Open the Mac App Store, search for NovaAtlas, and unlock reclamation actions with a one-time purchase; scanning, attribution and the refusal list stay free forever in every edition."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "直営版にはアプリ内課金がありません。Mac App Store で Klaris を検索して、買い切りで回収アクションを解放できます。スキャン・帰属・拒否リストはすべてのエディションで永久無料です。"
+            "value": "直営版にはアプリ内課金がありません。Mac App Store で NovaAtlas を検索して、買い切りで回収アクションを解放できます。スキャン・帰属・拒否リストはすべてのエディションで永久無料です。"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "直营版不提供内购。打开 Mac App Store 搜索 Klaris，一次买断解锁回收动作；扫描、归因与拒答清单在所有版本永久免费。"
+            "value": "直营版不提供内购。打开 Mac App Store 搜索 NovaAtlas，一次买断解锁回收动作；扫描、归因与拒答清单在所有版本永久免费。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "直營版不提供 App 內購買。打開 Mac App Store 搜尋 Klaris，一次買斷解鎖回收動作；掃描、歸因與拒答清單在所有版本永久免費。"
+            "value": "直營版不提供 App 內購買。打開 Mac App Store 搜尋 NovaAtlas，一次買斷解鎖回收動作；掃描、歸因與拒答清單在所有版本永久免費。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "직영 버전에는 앱 내 구매가 없습니다. Mac App Store에서 Klaris를 검색해 일회성 구매로 회수 동작을 잠금 해제하세요. 스캔, 원인 분석, 거부 목록은 모든 버전에서 영구 무료입니다."
+            "value": "직영 버전에는 앱 내 구매가 없습니다. Mac App Store에서 NovaAtlas를 검색해 일회성 구매로 회수 동작을 잠금 해제하세요. 스캔, 원인 분석, 거부 목록은 모든 버전에서 영구 무료입니다."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Die Direct-Edition hat keinen In-App-Kauf. Öffnen Sie den Mac App Store, suchen Sie nach Klaris und schalten Sie die Aufräumaktionen per Einmalkauf frei; Scannen, Ursachenanalyse und die Liste der Ablehnungen bleiben in jeder Edition dauerhaft kostenlos."
+            "value": "Die Direct-Edition hat keinen In-App-Kauf. Öffnen Sie den Mac App Store, suchen Sie nach NovaAtlas und schalten Sie die Aufräumaktionen per Einmalkauf frei; Scannen, Ursachenanalyse und die Liste der Ablehnungen bleiben in jeder Edition dauerhaft kostenlos."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "L’édition directe n’a pas d’achat intégré. Ouvrez le Mac App Store, cherchez Klaris et déverrouillez les actions de récupération avec un achat unique ; l’analyse, l’analyse des causes et la liste de refus restent gratuites pour toujours dans toutes les éditions."
+            "value": "L’édition directe n’a pas d’achat intégré. Ouvrez le Mac App Store, cherchez NovaAtlas et déverrouillez les actions de récupération avec un achat unique ; l’analyse, l’analyse des causes et la liste de refus restent gratuites pour toujours dans toutes les éditions."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "La edición directa no tiene compras dentro de la aplicación. Abre el Mac App Store, busca Klaris y desbloquea las acciones de recuperación con una compra única; el escaneo, el análisis de causas y la lista de rechazo siguen siendo gratis para siempre en todas las ediciones."
+            "value": "La edición directa no tiene compras dentro de la aplicación. Abre el Mac App Store, busca NovaAtlas y desbloquea las acciones de recuperación con una compra única; el escaneo, el análisis de causas y la lista de rechazo siguen siendo gratis para siempre en todas las ediciones."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "A edição direta não tem compra dentro do app. Abra a Mac App Store, procure por Klaris e desbloqueie as ações de liberação com uma compra única; a varredura, a análise de causas e a lista de recusas permanecem gratuitas para sempre em todas as edições."
+            "value": "A edição direta não tem compra dentro do app. Abra a Mac App Store, procure por NovaAtlas e desbloqueie as ações de liberação com uma compra única; a varredura, a análise de causas e a lista de recusas permanecem gratuitas para sempre em todas as edições."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "L'edizione diretta non ha acquisti in-app. Apri il Mac App Store, cerca Klaris e sblocca le azioni di recupero con un acquisto una tantum; scansione, analisi delle cause e lista dei rifiuti restano gratuite per sempre in ogni edizione."
+            "value": "L'edizione diretta non ha acquisti in-app. Apri il Mac App Store, cerca NovaAtlas e sblocca le azioni di recupero con un acquisto una tantum; scansione, analisi delle cause e lista dei rifiuti restano gratuite per sempre in ogni edizione."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "В прямой версии покупок внутри приложения нет. Откройте Mac App Store, найдите Klaris и разовой покупкой разблокируйте действия по освобождению места; сканирование, определение причин и список отказов остаются бесплатными навсегда во всех версиях."
+            "value": "В прямой версии покупок внутри приложения нет. Откройте Mac App Store, найдите NovaAtlas и разовой покупкой разблокируйте действия по освобождению места; сканирование, определение причин и список отказов остаются бесплатными навсегда во всех версиях."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "لا يوجد شراء داخل التطبيق في الإصدار المباشر. افتح Mac App Store، وابحث عن Klaris، وافتح إجراءات الاسترداد بشراء لمرة واحدة؛ يبقى الفحص وتحليل الأسباب وقائمة الرفض مجانيين للأبد في كل الإصدارات."
+            "value": "لا يوجد شراء داخل التطبيق في الإصدار المباشر. افتح Mac App Store، وابحث عن NovaAtlas، وافتح إجراءات الاسترداد بشراء لمرة واحدة؛ يبقى الفحص وتحليل الأسباب وقائمة الرفض مجانيين للأبد في كل الإصدارات."
           }
         }
       }
@@ -35839,73 +35839,73 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Buy Klaris on the Mac App Store"
+            "value": "Buy NovaAtlas on the Mac App Store"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mac App Store で Klaris を購入"
+            "value": "Mac App Store で NovaAtlas を購入"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在 Mac App Store 购买 Klaris"
+            "value": "在 Mac App Store 购买 NovaAtlas"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "在 Mac App Store 購買 Klaris"
+            "value": "在 Mac App Store 購買 NovaAtlas"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mac App Store에서 Klaris 구매"
+            "value": "Mac App Store에서 NovaAtlas 구매"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klaris im Mac App Store kaufen"
+            "value": "NovaAtlas im Mac App Store kaufen"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Achetez Klaris sur le Mac App Store"
+            "value": "Achetez NovaAtlas sur le Mac App Store"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Compra Klaris en el Mac App Store"
+            "value": "Compra NovaAtlas en el Mac App Store"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Compre o Klaris na Mac App Store"
+            "value": "Compre o NovaAtlas na Mac App Store"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Compra Klaris sul Mac App Store"
+            "value": "Compra NovaAtlas sul Mac App Store"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Купить Klaris в Mac App Store"
+            "value": "Купить NovaAtlas в Mac App Store"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "اشترِ Klaris من Mac App Store"
+            "value": "اشترِ NovaAtlas من Mac App Store"
           }
         }
       }
@@ -39716,73 +39716,73 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "To unlock reclamation actions, buy Klaris on the Mac App Store."
+            "value": "To unlock reclamation actions, buy NovaAtlas on the Mac App Store."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "回収アクションの解放は Mac App Store で Klaris をご購入ください。"
+            "value": "回収アクションの解放は Mac App Store で NovaAtlas をご購入ください。"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "回收动作解锁请在 Mac App Store 购买 Klaris。"
+            "value": "回收动作解锁请在 Mac App Store 购买 NovaAtlas。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "回收動作解鎖請在 Mac App Store 購買 Klaris。"
+            "value": "回收動作解鎖請在 Mac App Store 購買 NovaAtlas。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "회수 동작을 잠금 해제하려면 Mac App Store에서 Klaris를 구매하세요."
+            "value": "회수 동작을 잠금 해제하려면 Mac App Store에서 NovaAtlas를 구매하세요."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Um Aufräumaktionen freizuschalten, kaufen Sie Klaris im Mac App Store."
+            "value": "Um Aufräumaktionen freizuschalten, kaufen Sie NovaAtlas im Mac App Store."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pour déverrouiller les actions de récupération, achetez Klaris sur le Mac App Store."
+            "value": "Pour déverrouiller les actions de récupération, achetez NovaAtlas sur le Mac App Store."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Para desbloquear las acciones de recuperación, compra Klaris en el Mac App Store."
+            "value": "Para desbloquear las acciones de recuperación, compra NovaAtlas en el Mac App Store."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Para desbloquear as ações de liberação, compre o Klaris na Mac App Store."
+            "value": "Para desbloquear as ações de liberação, compre o NovaAtlas na Mac App Store."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Per sbloccare le azioni di recupero, compra Klaris sul Mac App Store."
+            "value": "Per sbloccare le azioni di recupero, compra NovaAtlas sul Mac App Store."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Чтобы разблокировать действия по освобождению, купите Klaris в Mac App Store."
+            "value": "Чтобы разблокировать действия по освобождению, купите NovaAtlas в Mac App Store."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "لفتح إجراءات الاسترداد، اشترِ Klaris من Mac App Store."
+            "value": "لفتح إجراءات الاسترداد، اشترِ NovaAtlas من Mac App Store."
           }
         }
       }
@@ -41769,73 +41769,73 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "One tap to Klaris quick clean"
+            "value": "One tap to NovaAtlas quick clean"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ワンタップで Klaris クイック整理"
+            "value": "ワンタップで NovaAtlas クイック整理"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "一点即达 Klaris 快捷回收"
+            "value": "一点即达 NovaAtlas 快捷回收"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "一點即達 Klaris 快速清理"
+            "value": "一點即達 NovaAtlas 快速清理"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "한 번의 탭으로 Klaris 빠른 정리"
+            "value": "한 번의 탭으로 NovaAtlas 빠른 정리"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mit einem Tipp zur Klaris-Schnellbereinigung"
+            "value": "Mit einem Tipp zur NovaAtlas-Schnellbereinigung"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un geste pour lancer le nettoyage rapide de Klaris"
+            "value": "Un geste pour lancer le nettoyage rapide de NovaAtlas"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un toque para la limpieza rápida de Klaris"
+            "value": "Un toque para la limpieza rápida de NovaAtlas"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Um toque para a limpeza rápida do Klaris"
+            "value": "Um toque para a limpeza rápida do NovaAtlas"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Un tocco per la pulizia rapida di Klaris"
+            "value": "Un tocco per la pulizia rapida di NovaAtlas"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Одно касание — и быстрая очистка Klaris"
+            "value": "Одно касание — и быстрая очистка NovaAtlas"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "نقرة واحدة إلى التنظيف السريع في Klaris"
+            "value": "نقرة واحدة إلى التنظيف السريع في NovaAtlas"
           }
         }
       }
@@ -45419,73 +45419,73 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Not enough samples yet — keep using Klaris for a few days and a forecast will appear."
+            "value": "Not enough samples yet — keep using NovaAtlas for a few days and a forecast will appear."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "样本不足 — 继续使用 Klaris 几天后即可生成预测。"
+            "value": "样本不足 — 继续使用 NovaAtlas 几天后即可生成预测。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "サンプルが不足しています — Klaris を数日使い続けると予測が表示されます。"
+            "value": "サンプルが不足しています — NovaAtlas を数日使い続けると予測が表示されます。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "樣本不足——再使用 Klaris 幾天後即可產生預測。"
+            "value": "樣本不足——再使用 NovaAtlas 幾天後即可產生預測。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "아직 샘플이 부족합니다 — Klaris를 며칠 더 사용하면 예측이 표시됩니다."
+            "value": "아직 샘플이 부족합니다 — NovaAtlas를 며칠 더 사용하면 예측이 표시됩니다."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Noch nicht genügend Messwerte — benutzen Sie Klaris noch einige Tage, dann erscheint eine Prognose."
+            "value": "Noch nicht genügend Messwerte — benutzen Sie NovaAtlas noch einige Tage, dann erscheint eine Prognose."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pas encore assez d’échantillons — continuez à utiliser Klaris quelques jours et une prévision apparaîtra."
+            "value": "Pas encore assez d’échantillons — continuez à utiliser NovaAtlas quelques jours et une prévision apparaîtra."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Aún no hay muestras suficientes: sigue usando Klaris unos días y aparecerá una previsión."
+            "value": "Aún no hay muestras suficientes: sigue usando NovaAtlas unos días y aparecerá una previsión."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ainda não há amostras suficientes — continue usando o Klaris por alguns dias e uma previsão aparecerá."
+            "value": "Ainda não há amostras suficientes — continue usando o NovaAtlas por alguns dias e uma previsão aparecerá."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ancora pochi campioni — continua a usare Klaris per qualche giorno e apparirà una previsione."
+            "value": "Ancora pochi campioni — continua a usare NovaAtlas per qualche giorno e apparirà una previsione."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Данных пока мало — пользуйтесь Klaris ещё несколько дней, и появится прогноз."
+            "value": "Данных пока мало — пользуйтесь NovaAtlas ещё несколько дней, и появится прогноз."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "لا توجد عينات كافية بعد — واصل استخدام Klaris بضعة أيام وسيظهر تنبؤ."
+            "value": "لا توجد عينات كافية بعد — واصل استخدام NovaAtlas بضعة أيام وسيظهر تنبؤ."
           }
         }
       }
@@ -46711,73 +46711,73 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Done by Klaris directly — moved to the Trash, restorable."
+            "value": "Done by NovaAtlas directly — moved to the Trash, restorable."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "由 Klaris 直接完成，移入废纸篓可回滚。"
+            "value": "由 NovaAtlas 直接完成，移入废纸篓可回滚。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klaris が直接実行し、ゴミ箱へ移動するため復元できます。"
+            "value": "NovaAtlas が直接実行し、ゴミ箱へ移動するため復元できます。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "由 Klaris 直接完成——移入垃圾桶，可還原。"
+            "value": "由 NovaAtlas 直接完成——移入垃圾桶，可還原。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klaris가 직접 처리합니다 — 휴지통으로 이동되며 복원할 수 있습니다."
+            "value": "NovaAtlas가 직접 처리합니다 — 휴지통으로 이동되며 복원할 수 있습니다."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Von Klaris direkt erledigt — in den Papierkorb verschoben, wiederherstellbar."
+            "value": "Von NovaAtlas direkt erledigt — in den Papierkorb verschoben, wiederherstellbar."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Effectué directement par Klaris — déplacé à la Corbeille, restaurable."
+            "value": "Effectué directement par NovaAtlas — déplacé à la Corbeille, restaurable."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lo hace Klaris directamente: se mueve a la Papelera y se puede restaurar."
+            "value": "Lo hace NovaAtlas directamente: se mueve a la Papelera y se puede restaurar."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Feito pelo Klaris diretamente — movido para a Lixeira, restaurável."
+            "value": "Feito pelo NovaAtlas diretamente — movido para a Lixeira, restaurável."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eseguito direttamente da Klaris — spostato nel Cestino, ripristinabile."
+            "value": "Eseguito direttamente da NovaAtlas — spostato nel Cestino, ripristinabile."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Klaris выполняет это сам — файлы попадают в Корзину и восстановимы."
+            "value": "NovaAtlas выполняет это сам — файлы попадают в Корзину и восстановимы."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "ينفذها Klaris مباشرة — تُنقل إلى المهملات وقابلة للاستعادة."
+            "value": "ينفذها NovaAtlas مباشرة — تُنقل إلى المهملات وقابلة للاستعادة."
           }
         }
       }

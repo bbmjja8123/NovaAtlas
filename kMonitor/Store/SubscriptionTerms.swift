@@ -15,8 +15,8 @@ public enum SubscriptionTerms {
     /// URLs the disclosure links to. Centralised so `PaywallView` and any
     /// other presentation surfaces share the same targets. Update these
     /// when the privacy / support sites move (see V1-TODO C4 + C5).
-    public static let privacyPolicyURL: URL = URL(string: "https://kraftly.app/kmonitor/privacy")!
-    public static let supportURL: URL = URL(string: "https://kraftly.app/kmonitor/support")!
+    public static let privacyPolicyURL: URL = URL(string: "https://novaatlas.app/kmonitor/privacy")!
+    public static let supportURL: URL = URL(string: "https://novaatlas.app/kmonitor/support")!
 
     /// Localization keys used to look up the disclosure copy.
     public enum LocalizationKey: String, CaseIterable {

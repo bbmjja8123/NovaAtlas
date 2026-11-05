@@ -3,9 +3,9 @@
   "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleName</key><string>Klaris</string>
-    <key>CFBundleDisplayName</key><string>Klaris</string>
-    <key>CFBundleIdentifier</key><string>app.kraftly.klaris</string>
+    <key>CFBundleName</key><string>NovaAtlas</string>
+    <key>CFBundleDisplayName</key><string>NovaAtlas</string>
+    <key>CFBundleIdentifier</key><string>com.novaatlas.novaatlas</string>
     <key>CFBundleVersion</key><string>$(CURRENT_PROJECT_VERSION)</string>
     <key>CFBundleShortVersionString</key><string>$(MARKETING_VERSION)</string>
     <key>CFBundlePackageType</key><string>APPL</string>
@@ -13,10 +13,10 @@
     <array>
         <dict>
             <key>CFBundleURLName</key>
-            <string>app.kraftly.klaris</string>
+            <string>com.novaatlas.novaatlas</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>klaris</string>
+                <string>novaatlas</string>
             </array>
         </dict>
     </array>
@@ -37,6 +37,6 @@
     <string>public.app-category.utilities</string>
     <key>LSMinimumSystemVersion</key><string>13.0</string>
     <key>NSHumanReadableCopyright</key>
-    <string>Copyright © 2026 Kraftly. All rights reserved.</string>
+    <string>Copyright © 2026 NovaAtlas. All rights reserved.</string>
 </dict>
 </plist>

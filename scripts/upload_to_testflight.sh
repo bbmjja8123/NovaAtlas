@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # upload_to_testflight.sh — One-shot MAS archive + TestFlight upload for
-# Klaris (kWise workspace; bundle app.kraftly.klaris).
+# NovaAtlas (kWise workspace; bundle com.novaatlas.novaatlas).
 #
 # Requires:
 #   - $TEAM_ID env var (10-char Apple Team ID, default TC973L6HPC)
@@ -19,7 +19,7 @@ TEAM_ID="${TEAM_ID:-TC973L6HPC}"
 WORKTREE=$(git rev-parse --show-toplevel)
 PROJECT="$WORKTREE/kWise/kWise.xcodeproj"
 BUILD_DIR="$WORKTREE/kWise/build"
-ARCHIVE="$BUILD_DIR/Klaris.xcarchive"
+ARCHIVE="$BUILD_DIR/NovaAtlas.xcarchive"
 VERSION="${1:-}"
 BUILD_NUM="${2:-}"
 

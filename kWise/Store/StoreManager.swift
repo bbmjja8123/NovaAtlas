@@ -1,10 +1,10 @@
 import StoreKit
 
-/// Single commerce surface for Klaris (P1 T7).
+/// Single commerce surface for NovaAtlas (P1 T7).
 ///
 /// The retired model was a yearly subscription + 1 GB monthly free quota.
 /// The current model is one non-consumable buyout: own
-/// `app.kraftly.klaris.buyout` → every reclamation action unlocks
+/// `com.novaatlas.novaatlas.buyout` → every reclamation action unlocks
 /// (`hasPurchased == true`); not owning it → the free tier, which keeps
 /// scanning/attribution and refuses cleanups (R5).
 @MainActor
@@ -13,7 +13,7 @@ public final class StoreManager: ObservableObject, StoreProtocol {
 
     /// The single non-consumable product. Internal (not `private`) so tests
     /// can pin the identifier against the .storekit configuration.
-    public static let productID = "app.kraftly.klaris.buyout"
+    public static let productID = "com.novaatlas.novaatlas.buyout"
 
     /// ProductIDs of the currently active (verified, non-revoked)
     /// entitlements. Injectable so tests can drive `checkSubscription()`

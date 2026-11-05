@@ -7,7 +7,7 @@ public final class PersistenceController: @unchecked Sendable {
 
     public let container: NSPersistentContainer
 
-    private static let log = Logger(subsystem: "app.kraftly.ksift", category: "persistence")
+    private static let log = Logger(subsystem: "com.novaatlas.ksift", category: "persistence")
 
     private init() {
         let bundle = Bundle(for: ScanRecordEntity.self)
@@ -31,7 +31,7 @@ public final class PersistenceController: @unchecked Sendable {
             storeURL = FileManager.default.temporaryDirectory
                 .appendingPathComponent("ksift-tests-\(UUID().uuidString).sqlite")
         } else if let appGroup = FileManager.default
-            .containerURL(forSecurityApplicationGroupIdentifier: "group.app.kraftly.ksift") {
+            .containerURL(forSecurityApplicationGroupIdentifier: "group.com.novaatlas.ksift") {
             storeURL = appGroup.appendingPathComponent("kSift.sqlite")
         } else {
             Self.log.warning("App Group container unavailable — falling back to Application Support. Check kSift.entitlements.")

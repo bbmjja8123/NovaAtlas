@@ -168,7 +168,7 @@ public protocol SMCConnecting: Sendable {
 /// that is safe to use from any single thread at a time.
 public final class AppleSMCConnector: SMCConnecting, @unchecked Sendable {
     private var connect: io_connect_t = 0
-    private let queue = DispatchQueue(label: "app.kraftly.kwatch.AppleSMCConnector")
+    private let queue = DispatchQueue(label: "com.novaatlas.kwatch.AppleSMCConnector")
 
     public init() {}
 

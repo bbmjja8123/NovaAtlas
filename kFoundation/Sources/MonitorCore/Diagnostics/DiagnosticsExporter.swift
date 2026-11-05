@@ -219,7 +219,7 @@ public final class DiagnosticsExporter: DiagnosticsExporting, @unchecked Sendabl
         let bundle = Bundle.main
         let marketing = bundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.0.0"
         let build = bundle.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "0"
-        let bundleIdentifier = bundle.object(forInfoDictionaryKey: "CFBundleIdentifier") as? String ?? "app.kraftly.kwatch"
+        let bundleIdentifier = bundle.object(forInfoDictionaryKey: "CFBundleIdentifier") as? String ?? "com.novaatlas.kwatch"
 
         var availability: [String: Bool] = [:]
         for kind in MetricKind.allCases {

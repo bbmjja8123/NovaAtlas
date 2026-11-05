@@ -2,10 +2,10 @@
 //
 // The single seam where the two distribution channels diverge.
 //
-// Klaris ships in two editions from one source tree (P3 dual-channel):
+// NovaAtlas ships in two editions from one source tree (P3 dual-channel):
 // * ``macAppStore`` — sandboxed (`kWise` target, `DISTRIBUTION_MAS`); scans
 //   run through PowerScope's grant-home-folder flow.
-// * ``direct`` — non-sandboxed Developer ID build (`KlarisDirect` target,
+// * ``direct`` — non-sandboxed Developer ID build (`NovaAtlasDirect` target,
 //   `DISTRIBUTION_DIRECT`); scans assume the real home directory is readable
 //   and the grant flow is a no-op (`DirectScopeProvider`).
 //

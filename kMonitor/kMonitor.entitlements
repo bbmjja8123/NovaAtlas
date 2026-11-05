@@ -5,7 +5,7 @@
 <dict>
     <key>com.apple.security.app-sandbox</key><true/>
     <key>com.apple.security.application-groups</key>
-    <array><string>group.app.kraftly.shared</string></array>
+    <array><string>group.com.novaatlas.shared</string></array>
     <key>com.apple.security.network.client</key><false/>
     <key>com.apple.security.network.server</key><false/>
     <key>com.apple.security.device.usb</key><false/>

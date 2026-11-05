@@ -1,6 +1,6 @@
 name: kFresh
 options:
-  bundleIdPrefix: app.kraftly
+  bundleIdPrefix: app.novaatlas
   deploymentTarget:
     macOS: "13.0"
   xcodeVersion: "15.0"
@@ -21,7 +21,7 @@ targets:
           - "**/*.md"
           - "Tests/**"
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.kfresh
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.kfresh
       INFOPLIST_FILE: Info.plist
       CODE_SIGN_STYLE: Automatic
       DEVELOPMENT_TEAM: ""
@@ -45,7 +45,7 @@ targets:
     sources:
       - Tests
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.kfresh.tests
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.kfresh.tests
       MACOSX_DEPLOYMENT_TARGET: "13.0"
       SWIFT_VERSION: "5.9"
     dependencies:
@@ -63,7 +63,7 @@ targets:
     sources:
       - FinderExtension
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: app.kraftly.kfresh.finder-sync
+      PRODUCT_BUNDLE_IDENTIFIER: com.novaatlas.kfresh.finder-sync
     dependencies:
       - target: kFresh
 

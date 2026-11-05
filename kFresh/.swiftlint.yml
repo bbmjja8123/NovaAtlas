@@ -31,7 +31,7 @@ type_body_length:
   warning: 500
   error: 1000
 
-# === v1.x-A: Kraftly custom rules (warning baseline) ===
+# === v1.x-A: NovaAtlas custom rules (warning baseline) ===
 custom_rules:
   no_silent_try_question_mark:
     name: "Silent try? in production code"
@@ -52,7 +52,7 @@ custom_rules:
 
   no_kuninstall_string:
     name: "kUninstall literal in source"
-    regex: '"kUninstall"|kUninstall/|app\.kraftly\.kuninstall'
+    regex: '"kUninstall"|kUninstall/|app\.novaatlas\.kuninstall'
     message: "kFresh rename complete; remove all kUninstall literals from source."
     severity: error
     match_kinds:

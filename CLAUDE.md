@@ -1,4 +1,4 @@
-# Kraftly Mac App Suite — 项目指南
+# NovaAtlas Mac App Suite — 项目指南
 
 > 这是基于腾讯柠檬清理（`/Users/mengjianjun/Documents/ai/aicoding/macapp/Lemon`）独立开发者启动的新一代 Mac App 矩阵。**所有代码全新 Swift 编写，仅核心逻辑参考 Lemon 实现思路，绝不复用 Lemon 任何 Objective-C / C++ 代码。**
 
@@ -13,16 +13,16 @@
 
 | App | Bundle ID | 主轴 | 定价 | 状态 |
 |---|---|---|---|---|
-| **kWise**（Mac 管家 / CMM 对标，产品名 Klaris） | `app.kraftly.klaris` | 空间解剖单一画布（扫描即动作 + 就地预演）+ 叙事历史 | 免费（扫描+归因+拒答清单）+ $9.90 买断 | 🔄 **Klaris P2 单一画布完成** |
-| **kMonitor**（菜单栏监控） | `app.kraftly.kmonitor` | 平台集成 + Widget | 待设计 | 📋 Backlog |
-| **kSift**（重复/大文件/粉碎） | `app.kraftly.ksift` | 极客 + AI（开发者场景） | $9.99 买断 | 📋 Spec 定稿 |
-| **kUninstall**（应用卸载） | `app.kraftly.kuninstall` | 平台集成 + 自动化 | 待设计 | 📋 Backlog |
+| **kWise**（Mac 管家 / CMM 对标，产品名 NovaAtlas） | `com.novaatlas.novaatlas` | 空间解剖单一画布（扫描即动作 + 就地预演）+ 叙事历史 | 免费（扫描+归因+拒答清单）+ $9.90 买断 | 🔄 **NovaAtlas P2 单一画布完成** |
+| **kMonitor**（菜单栏监控） | `com.novaatlas.kmonitor` | 平台集成 + Widget | 待设计 | 📋 Backlog |
+| **kSift**（重复/大文件/粉碎） | `com.novaatlas.ksift` | 极客 + AI（开发者场景） | $9.99 买断 | 📋 Spec 定稿 |
+| **kUninstall**（应用卸载） | `com.novaatlas.kuninstall` | 平台集成 + 自动化 | 待设计 | 📋 Backlog |
 
 ### 1.3 品牌
 - 命名规范：所有 App 以 `k` 前缀开头（kWise, kMonitor, kSift, kUninstall）
-- 统一品牌：**Kraftly**（App Store 元数据、官网、社交账号统一）
-- Slogan 候选：`Kraft — Cleaner Mac tools, made with care`
-- **历史改名**：原 `kSpaceClean` 已重命名为 `kWise`（2026-08-03 锁定）；2026-09-28 P0 归因改造时 bundle ID 再次迁移为 `app.kraftly.klaris`（App 从未上架，无历史评分/内购需保留，App Group 同步迁至 `group.app.kraftly.klaris`，深链统一为 `klaris://`）。详见 §3.0。
+- 统一品牌：**NovaAtlas**（App Store 元数据、官网、社交账号统一）
+- Slogan 候选：`Kraft — Cleaner Mac tools, made with care`（旧品牌遗留，待重新拟定）
+- **历史改名**：原 `kSpaceClean` 已重命名为 `kWise`（2026-08-03 锁定）；2026-09-28 P0 归因改造时 bundle ID 迁移为 `app.kraftly.klaris`；**2026-11-05 品牌统一改为 NovaAtlas**——bundle ID 迁至 `com.novaatlas.novaatlas`（App 仍未上架，无历史评分/内购需保留），App Group 同步迁至 `group.com.novaatlas.novaatlas`（共享组 `group.com.novaatlas.shared`），深链统一为 `novaatlas://`，workspace 改名 `NovaAtlasWorkspace.xcworkspace`，GitHub 仓库 kSpaceClean → NovaAtlas；docs/ 历史归档文档保留旧名以忠实记录历史。详见 §3.0。
 
 ---
 
@@ -30,7 +30,7 @@
 
 ### 2.1 Workspace 结构
 ```
-KraftlyWorkspace.xcworkspace         # 顶层 workspace
+NovaAtlasWorkspace.xcworkspace         # 顶层 workspace
 ├── kFoundation/                     # 本地 Swift Package（共享层）
 │   ├── FileScanner/                 # 文件枚举、Hash、相似度
 │   ├── PrivacyShield/               # TCC 权限管理
@@ -106,8 +106,8 @@ KraftlyWorkspace.xcworkspace         # 顶层 workspace
 
 ### 3.0 命名与定位
 
-- **产品名**：Klaris（CN: 明澈）—— Xcode target/模块名仍为 `kWise`（2026-09-28 P0 已迁移，PRODUCT_NAME=Klaris）
-- **bundle ID**：`app.kraftly.klaris`（2026-09-28 P0 迁移；App Group `group.app.kraftly.klaris`，深链 `klaris://`）
+- **产品名**：NovaAtlas（CN: 明澈）—— Xcode target/模块名仍为 `kWise`（2026-09-28 P0 已迁移，PRODUCT_NAME=NovaAtlas）
+- **bundle ID**：`com.novaatlas.novaatlas`（2026-09-28 P0 迁移；App Group `group.com.novaatlas.novaatlas`，深链 `novaatlas://`）
 - **Slogan**：Smarter care for your Mac / 智能清理，焕然如新
 - **对标**：CleanMyMac X
 - **产品矩阵**：kWise 主 + kMonitor / kSift / kUninstall 独立 App（双层矩阵，B1a）
@@ -130,7 +130,7 @@ KraftlyWorkspace.xcworkspace         # 顶层 workspace
 | 一键清理 | ✅ | ❌ | ✅ **统一两段预演式清理**（画布组/快捷回收/下钻页三个入口全部先预演再执行，预演与执行逐项一致、每项给原因、可逐项豁免）+ 废纸篓回滚 |
 | App Store 集成 | ✅ | ❌ | ✅ + Shortcuts 集成 |
 
-### 3.4 Klaris 功能现状（P2 单一画布后）
+### 3.4 NovaAtlas 功能现状（P2 单一画布后）
 
 > IA 收敛（P2 T9）：导航只剩 3 项 `.anatomy / .history / .settings`；下钻页在画布内路由，粉碎窗 / 磁盘健康详情以 sheet 呈现。已退役表面：Toolbox / SpaceMap（2D 空间地图）/ CleanupContent / SmartCareHero / 独立扫描页 / 各工具视图（~27 个 UI 文件删除）。
 
@@ -139,7 +139,7 @@ KraftlyWorkspace.xcworkspace         # 顶层 workspace
 | 🆕 **空间解剖单一画布** | 唯一首屏（AnatomyView）：动态分组（归因 cause 组 + 重复/相似照片/大文件三检测组，空组不出现）+ 五色徽章（绿可回收/蓝迁出/橙注意/红数据·不属垃圾/灰不敢判）+ refused 派生 UncertainCard | 🔴 P2 重做 |
 | 流式扫描（ScanOrchestrator） | 扫描在画布 hero 内发起（扫描即动作，含进行中/取消/完成态）；单引擎，实时合成 + ETA | ✅（P2 收进画布） |
 | 统一预演式清理 | **三个入口（画布组 / 快捷回收 / 下钻页）全部先预演再执行**，预演=执行逐项一致、每项给原因、可逐项豁免 + 废纸篓 30 天回滚 | ✅（P2 T5 收口） |
-| **Smart Care** | 降级为画布 hero「安全快捷回收」流（QuickCleanHeroStates），不再是独立页面；深链 `klaris://smartcare` 落画布 | 🔄 P2 再降级 |
+| **Smart Care** | 降级为画布 hero「安全快捷回收」流（QuickCleanHeroStates），不再是独立页面；深链 `novaatlas://smartcare` 落画布 | 🔄 P2 再降级 |
 | 分组下钻 | GroupDrillDownView（画布内 navigationDestination）：文件级勾选 + 就地预演入口 + 节点问答（AssistantNodePanel 复用） | 🔴 P2 新增 |
 | 叙事历史 | TimelineView + NarrativeHeader（吸收月报，P2 T7）；按 run 分组、整体回滚 | ✅ |
 | 设置 | 吸收维护（~/Library/Logs 引导动作）/ 隐私（TCC 概览）/ 归因规则查看（P2 T8） | ✅ |
@@ -150,16 +150,16 @@ KraftlyWorkspace.xcworkspace         # 顶层 workspace
 | 🆕 应用卸载（基础） | 引擎 + UI 均交付（P3：「+」菜单 sheet，双栏 + 残留分组 + 提交口径诚实弹窗） | ✅（P3 重接入） |
 | PowerScope 主目录授权 | 主目录书签授权（画布 grant gate 承接，替代旧 FDA 引导） | ✅ |
 | 菜单栏图标 | 显示已用空间 + 一键扫描入口 | ✅ |
-| 桌面 Widget | 基础版（13）+ Interactive 版（14+，交互按钮落 `klaris://smartcare` → 画布） | ✅ |
+| 桌面 Widget | 基础版（13）+ Interactive 版（14+，交互按钮落 `novaatlas://smartcare` → 画布） | ✅ |
 | Shortcuts App Intents | 扫描/清理等（走 ScanOrchestrator 单引擎） | ✅ |
-| Finder 扩展 | 右键"用 Klaris 扫描" → `klaris://scan?path=` 落画布 | ✅ |
+| Finder 扩展 | 右键"用 NovaAtlas 扫描" → `novaatlas://scan?path=` 落画布 | ✅ |
 | 助手问答 | 下钻页节点级问答（AssistantNodePanel，聊天框已退役；答案诚实，不承诺扫描/清理范围外的事） | ✅（P2 T9 fix） |
 | Live Activities / 空间地图 | 已删除（v2.0 Phase 1 / P2 T9 清理死面） | ❌ 已删 |
 | 🆕 无障碍审计 | rail /「+」菜单 / 组卡 / 预演开关 VoiceOver 标注 + Reduce Motion 门控 + AccessibilityAuditTests 审计测试 | ✅（冲刺 T1） |
 | 🆕 清理完成时刻 | 释放字节滚动动画 + Glass 音效（设置可关）+ RM 感知 | ✅（冲刺 T2） |
 | 🆕 下钻 QuickLook | 行级 eye 按钮 + Space 键预览（资格按条目缓存，不逐行 stat） | ✅（冲刺 T3） |
 | 🆕 快捷键 | ⌘1/2/3 rail 切换 + ⌘, 设置 | ✅（冲刺 T4） |
-| 🆕 Dock 拖放粉碎 | Dock 图标投放文件 → `klarisOpenFiles` 路由 → 粉碎 sheet | ✅（冲刺 T5） |
+| 🆕 Dock 拖放粉碎 | Dock 图标投放文件 → `novaatlasOpenFiles` 路由 → 粉碎 sheet | ✅（冲刺 T5） |
 | 🆕 预演安全感页脚 | 预演 sheet 底部 30 天回滚承诺 + 永久路径诚实标注 | ✅（冲刺 T6） |
 | 🆕 FSEvents 增量监视 | 画布内容变化 pill（即时重扫提示；启动失败诚实降级） | ✅（冲刺 T7） |
 | 🆕 家务三画布组 | iOS 备份（橙注意·删前警示无 iCloud 备份即数据损失）+ 下载分诊 + 废纸篓大项（永久路径） | ✅（冲刺 T8） |
@@ -168,7 +168,7 @@ KraftlyWorkspace.xcworkspace         # 顶层 workspace
 | 🆕 Control Widget | 控制中心快捷清理控件（WidgetKit ControlWidget，26.0 门控；25 及以下隐藏） | ✅（冲刺 T11） |
 | 本地化 | **12 语**：英文 + 简体中文 + 日文 + zh-Hant / ko / de / fr / es / pt-BR / it / ru / ar（含 RTL 审计门禁） | ✅（冲刺 T12） |
 
-**深链（P2 终态）**：`klaris://scan?path=` / `smartcare` / `health` → anatomy；`history` → history；`settings` → settings。退役面的旧深链（clean/privacy/startup/uninstall/shred/tools/spacemap 等）不再路由。
+**深链（P2 终态）**：`novaatlas://scan?path=` / `smartcare` / `health` → anatomy；`history` → history；`settings` → settings。退役面的旧深链（clean/privacy/startup/uninstall/shred/tools/spacemap 等）不再路由。
 
 ### 3.5 kWise 内部模块
 ```
@@ -176,7 +176,7 @@ kWise/
 ├── App/
 │   ├── kWiseApp.swift                # @main
 │   ├── RootView.swift                # NavigationSplitView（rail 3 项：anatomy/history/settings）
-│   ├── AppCoordinator.swift          # 深链路由（klaris:// 终态）+ 粉碎 sheet
+│   ├── AppCoordinator.swift          # 深链路由（novaatlas:// 终态）+ 粉碎 sheet
 │   └── AppGraph.swift                # DI 单根
 ├── Features/
 │   ├── Anatomy/                      # 画布数据层（CanvasGroup/CanvasScanCoordinator）+ GroupDrillDownView
@@ -201,7 +201,7 @@ kWise/
 - **价格**：**免费（扫描 + 归因 + 拒答清单永久免费）+ $9.90 买断**（解锁回收执行；无订阅、无试用）
 - **付费门槛**：未购买时清理是**拒答**（所选目标全部跳过 → 弹 Paywall），不做额度截断（1 GiB/月配额已于 P1 T7 退役）
 - **地区定价**：美 $9.90 / 中 ¥68
-- **内购 SKU**：`app.kraftly.klaris.buyout`（Non-Consumable 买断）
+- **内购 SKU**：`com.novaatlas.novaatlas.buyout`（Non-Consumable 买断）
 
 ### 3.7 ASO 关键词（美区主目标）
 - **主关键词**：`mac cleaner`、`disk cleaner`、`storage cleaner`、`clean my mac`、`mac storage`
@@ -382,7 +382,7 @@ kWise/
 - [x] **Phase 3 CTA + 菜单栏** — Smart Care hero CTA 全流程状态机 + containerOnly 授权卡；DiskHealthCard 上首页；菜单栏 quickClean/quickScan/openSettings 实现 + 真实「最近清理」行（CleanupEventSink）
 - [x] **Phase 4 空间地图 2D** — SegmentBuilder（2π 守恒/小项折叠）+ Canvas sunburst/treemap + 下钻/面包屑 + ⌘选中映射 ScanTreeNode（删 .galaxy）
 - [x] **Phase 5 M2 + M6** — 启动项：PowerScope 扫描 + 用户级 trash/restore 开关 + 系统级「需手动处理」引导；粉碎：护栏 → 1-pass 覆写（SSD 诚实文案）→ 校验 → 3 次改名 → trash 处置 + DELETE 确认
-- [x] **Phase 6 Widget + Intents** — kWise/Shared/WidgetFeed 双 target（WidgetSnapshot 原子写 App Group + schemaVersion 守卫）；Widget 真实数据 + 交互清理按钮（Button(intent:) → klaris://smartcare）；Intents 回 target（Shortcuts 恢复）
+- [x] **Phase 6 Widget + Intents** — kWise/Shared/WidgetFeed 双 target（WidgetSnapshot 原子写 App Group + schemaVersion 守卫）；Widget 真实数据 + 交互清理按钮（Button(intent:) → novaatlas://smartcare）；Intents 回 target（Shortcuts 恢复）
 - [x] **Phase 7 创意三件套** — Core Data 轻量迁移（runID/actionKind/restoredAt）+ 时间线（按 run 分组、整体回滚）；月报（DiskSampleStore 环形采样 + OLS 预测，r²<0.5 → 波动较大）；StreakStore/9 成就/StreakSink → widget streak
 - [x] **Phase 8 助手 + Onboarding + 本地化** — AssistantIntentMatcher（zh/en 模板表，零网络，audit 测试禁 URLSession）+ 答案卡片；Onboarding 首启（welcome → PowerScope → tour）；xcstrings 30 → 51 keys（nav.* 三语）；NewCopyAuditTests（scareware 禁语 + 粉碎诚实文案）
 - [x] **测试** — Phase 1/2/3/4/5/6/7/8 各模块新增 ~90 用例；xcodebuild test-runner 曾于 2026-09-05 挂起（环境 wedge），已随重启恢复 — 见「收尾债清理」全量基线
@@ -414,20 +414,20 @@ kWise/
   - 另 4 个为测试夹具/契约问题（夹具漏填 `totalSize`、工厂函数当 provider、审计扫到注释、`minFileSize` 滤空夹具）
 - [x] **全量测试基线** — test-runner 挂起已随重启消失。**最终基线 522 tests / 0 failures**（kWiseTests，2026-09-27，耗时约 21 分钟）。对比清理前 518/502/16 且因 4 次崩溃导致 runner 反复重启跑了约 7 小时
 
-### Klaris P1 — 信任解剖改造 ✅ (2026-09-28 → 2026-09-30)
-> 10 任务 + 2 修复轮，11 commits（`5a2ce3b..0a54d3c`）。spec：`.superpowers/sdd/2026-09-29-klaris-p1-trust-anatomy/`。P0（2026-09-28 bundle 迁移 `app.kraftly.klaris` + 归因数据层）已先行落地。
+### NovaAtlas P1 — 信任解剖改造 ✅ (2026-09-28 → 2026-09-30)
+> 10 任务 + 2 修复轮，11 commits（`5a2ce3b..0a54d3c`）。spec：`.superpowers/sdd/2026-09-29-klaris-p1-trust-anatomy/`。P0（2026-09-28 bundle 迁移 `com.novaatlas.novaatlas` + 归因数据层）已先行落地。
 - [x] **T1 空间解剖成为 rail 首屏** — rail 固定 `[.anatomy, .scan, .tools, .cleanup, .history, .settings]`；smartCare 退为深链直达
 - [x] **T2 L1 语义归因** — NLEmbedding sentence embedding probable 档接入归因服务管道（零网络）
 - [x] **T3+T4 两段预演式清理** — 预演与执行 1:1 契约测试 + 每项可解释原因 + 逐项豁免 + 无归因行诚实标注；修复轮：确认只带确认集 + 本地化备注 + 双击守卫
 - [x] **T5 解剖首屏视图** — cause 分组 + 置信徽章 + L1 区块（原预览面退役）
 - [x] **T6 Smart Care 降级** — safe-quick-clean 次级页，首屏让位空间解剖
-- [x] **T7 配额退役** — 1 GiB/月截断 → $9.90 非消耗买断（`app.kraftly.klaris.buyout`）；未购买 = 拒答（全跳过 → Paywall）；修复轮：启动时 entitlement 刷新 + 购买成功态
+- [x] **T7 配额退役** — 1 GiB/月截断 → $9.90 非消耗买断（`com.novaatlas.novaatlas.buyout`）；未购买 = 拒答（全跳过 → Paywall）；修复轮：启动时 entitlement 刷新 + 购买成功态
 - [x] **T8 助手聊天框退役** — 问答内嵌 DetailPanel（AssistantNodePanel 节点级问答）
 - [x] **T9 双引擎合一** — 旧规则引擎 + AIClassifier/RuleClassifier 死代码删除（~4,600 行）；Intents 走 ScanOrchestrator
 - [x] **T10 文档诚实化** — 本文件假卖点修正 + 全量测试基线（见下）
-- [x] **测试基线** — **579 tests / 0 failures**（`xcodebuild test -workspace KraftlyWorkspace.xcworkspace -scheme kWise`，2026-09-30，全量单跑 ~7 分钟未触发 wedge）
+- [x] **测试基线** — **579 tests / 0 failures**（`xcodebuild test -workspace NovaAtlasWorkspace.xcworkspace -scheme kWise`，2026-09-30，全量单跑 ~7 分钟未触发 wedge）
 
-### Klaris P2 — 单一画布改造 ✅ (2026-10-06 → 2026-10-07)
+### NovaAtlas P2 — 单一画布改造 ✅ (2026-10-06 → 2026-10-07)
 > 11 任务 + 3 修复轮，15 commits（`ac48837..5322707` + T10 docs）。spec：`.superpowers/sdd/2026-10-06-klaris-p2-single-canvas/`。
 - [x] **T1 rail 收敛为 3** — `[.anatomy, .history, .settings]`，深链全部落画布
 - [x] **T2 画布数据层** — CanvasGroup/CanvasEntry/GroupKind 动态分组组装器（空组不出现、refused→UncertainCard）+ CanvasScanCoordinator 三检测器 fan-out
@@ -442,19 +442,19 @@ kWise/
 - [x] **测试基线** — **562 tests / 0 failures**（build-for-testing + 分批 -only-testing，45 批逐批报告，2026-10-08）。13 个源码枚举型审计类/方法因宿主 wedge（沙箱测试宿主 open()/trash-XPC 阻塞，重启可解）跳过，其源码审计断言已带外 grep 复核全绿；待重启后复跑（详见 task-10-report）
 - [x] **能力决策备忘（待 Product）** — 卸载/启动项引擎已交付但 UI 不可达（P3 候选）；助手答案诚实化（只承诺已实现能力）
 
-### Klaris P3 上架准备 — 双渠道 + 提审补齐 🔄 (2026-10-25)
+### NovaAtlas P3 上架准备 — 双渠道 + 提审补齐 🔄 (2026-10-25)
 > 5 commits（`e2e77f1..47db984`）。计划：`.claude/plans/playful-exploring-crab.md`。三路全程序排查（M1-M6 可达性 / MAS 合规 / 构建-测试-文档）后按用户决策落地。
 - [x] **P0 — 图标与版本工具** — icon_1024 修为 1024×1024 8-bit（master 存 Tools/branding/）；version-bump.sh 改写为 project.yml + XcodeGen 口径
-- [x] **R1 — 双渠道架构** — KlarisDirect target（Developer ID，无沙盒 + Hardened Runtime，DISTRIBUTION_DIRECT）与 MAS kWise（DISTRIBUTION_MAS）同源码共 bundle ID；PowerScope 加 `.fullAccess` 档 + DirectScopeProvider；DistributionChannel 单缝；**修复 ENTITLEMENTS_FILE 从未生效的隐性 bug**（改 CODE_SIGN_ENTITLEMENTS，Debug ad-hoc / Release 真 entitlements + Team TC973L6HPC）；hasFullDiskAccess TCC 探测删除（scope 层级语义接管）；Onboarding/设置/买断墙按渠道分支（直营 = MAS 购买引导）；MasScanScope.md 三层可读性契约 + ScanScopeContractTests（10 用例）
-- [x] **R2 — MAS 扫描诚实性** — PrivacyScanner 注入真实主目录（原 NSHomeDirectory 静默扫容器）；设置页隐私区 container-only 授权引导；FDA 行直营专属；画布 systemStatus 占位符改真实 scope 状态行；引擎跳过的受限根上画布诊断（noteSkippedRegions，禁止静默丢弃）；KlarisDirect Debug 产物改名防 DerivedData 冲突
+- [x] **R1 — 双渠道架构** — NovaAtlasDirect target（Developer ID，无沙盒 + Hardened Runtime，DISTRIBUTION_DIRECT）与 MAS kWise（DISTRIBUTION_MAS）同源码共 bundle ID；PowerScope 加 `.fullAccess` 档 + DirectScopeProvider；DistributionChannel 单缝；**修复 ENTITLEMENTS_FILE 从未生效的隐性 bug**（改 CODE_SIGN_ENTITLEMENTS，Debug ad-hoc / Release 真 entitlements + Team TC973L6HPC）；hasFullDiskAccess TCC 探测删除（scope 层级语义接管）；Onboarding/设置/买断墙按渠道分支（直营 = MAS 购买引导）；MasScanScope.md 三层可读性契约 + ScanScopeContractTests（10 用例）
+- [x] **R2 — MAS 扫描诚实性** — PrivacyScanner 注入真实主目录（原 NSHomeDirectory 静默扫容器）；设置页隐私区 container-only 授权引导；FDA 行直营专属；画布 systemStatus 占位符改真实 scope 状态行；引擎跳过的受限根上画布诊断（noteSkippedRegions，禁止静默丢弃）；NovaAtlasDirect Debug 产物改名防 DerivedData 冲突
 - [x] **R3 — M2/M5/M3 重接入** — AppUninstallView（双栏 + 拖入扫描 + 提交口径诚实弹窗）+ AppUninstallDetailPanel；StartupItemsView（用户项停用/恢复 + 系统项只读 + 畸形 plist）；PrivacySurfaceCatalog 入设置页（死 chevron 移除、FDA 行渠道门控）；AppGraph appUninstallVM/startupItemsVM 工厂 + CanvasPlusMenu 4 项 + 深链退役注释；GraphFactoryRewiringTests
 - [x] **R4 — 提审机械项** — 全量本地化清扫（~450 keys ×3 语，3 并行批；助手意图匹配表保留中文模式）；Localizable.xcstrings 846 keys；InfoPlist.xcstrings（CFBundleDisplayName ×3 target）；appex PrivacyInfo ×2；删 NSAppleEventsUsageDescription；DiskHealthDetailView 注入画布同款 VM；文案审计测试改钉 key
 - [x] **P5 文档/脚本** — upload_to_testflight.sh 重写（kWise 口径）；release_direct.sh（公证+staple）；SubmissionChecklist/Runbook/PrivacyDetails/Metadata 对齐买断制与双渠道
-- [x] **双渠道全量基线（2026-10-25 重启后）** — MAS scheme kWise：**672 tests / 0 failures**（修复 1 个 R4 遗留断言：DuplicateFolderDescriberTests 改钉本地化键 `dupe.topic.photos`，commit 6330461）；P2 wedge 跳过的审计/门禁测试全数复跑通过（SurfaceRetirementAudit 3、AttributionCopyAudit 3、ScarewareCopyAudit 2、LocalizationCompletenessTests 2，本地化门禁全绿）；KlarisDirect scheme Debug 构建通过（单测宿主为 MAS app，Direct 渠道语义由渠道无关的 ScanScopeContractTests 钉住，KlarisDirect scheme 无 test action）。首次尝试编译失败系重启后 DerivedData 陈旧模块缓存，重构建即恢复
+- [x] **双渠道全量基线（2026-10-25 重启后）** — MAS scheme kWise：**672 tests / 0 failures**（修复 1 个 R4 遗留断言：DuplicateFolderDescriberTests 改钉本地化键 `dupe.topic.photos`，commit 6330461）；P2 wedge 跳过的审计/门禁测试全数复跑通过（SurfaceRetirementAudit 3、AttributionCopyAudit 3、ScarewareCopyAudit 2、LocalizationCompletenessTests 2，本地化门禁全绿）；NovaAtlasDirect scheme Debug 构建通过（单测宿主为 MAS app，Direct 渠道语义由渠道无关的 ScanScopeContractTests 钉住，NovaAtlasDirect scheme 无 test action）。首次尝试编译失败系重启后 DerivedData 陈旧模块缓存，重构建即恢复
 - [ ] **待办（需用户/GUI）** — UI 冒烟**用例已交付**（`kWise/UITests/SmokeUITests.swift` 4 条：onboarding 走通 / +菜单→卸载 sheet / 设置启动项 sheet / 未购买→买断墙路由；独立 scheme `kWiseSmokeUI`，结构与文案元素带 accessibilityIdentifier），但 **执行被环境 wedge 阻塞**（test runner「Timed out while enabling automation mode」×3，代码侧两渠道构建全绿；需 GUI 会话授权自动化或重启后复跑）；App Store Connect 记录/截图/IAP 创建；Release 归档验证（GUI 会话出 profile）
 - [ ] **决策备忘** — 直营正式付费方案（许可密钥/Paddle）；直营自动更新（Sparkle）；MAS 展示名终审
 
-### Klaris 推荐冲刺 — 12 语 + 推荐就绪 ✅ (2026-10-26 → 2026-10-27)
+### NovaAtlas 推荐冲刺 — 12 语 + 推荐就绪 ✅ (2026-10-26 → 2026-10-27)
 > 13 任务，22 commits（`feb1a08..914e4f1`，含实现计划 0336d1a 与 i18n 工具 chore）。计划：`docs/superpowers/plans/2026-10-26-klaris-feature-sprint.md`；台账：`.superpowers/sdd/2026-10-26-klaris-feature-sprint/`。
 - [x] **T1 无障碍审计** — rail /「+」菜单 / 组卡 / 预演开关 VoiceOver 标注 + RM 门控 helper + AccessibilityAuditTests
 - [x] **T2 清理完成时刻** — 释放字节滚动动画 + Glass 音效（设置可关）+ RM 感知
@@ -470,16 +470,16 @@ kWise/
 - [x] **T12 12 语本地化** — +zh-Hant/ko/de/fr/es/pt-BR/it/ru/ar + RTL 审计门禁；widget appex strings 补齐
 - [x] **T13 基线收口** — DockDropRoutingTests 改逐跳验证（原整链写法在无 SwiftUI 场景的单测宿主确定性落空——通知中段 RootView `.onReceive` 无观察者；改为 AppDelegate 转发 + 模型末端真跑 + RootView 接线源码审计）；重生成 xcodeproj 清掉 i18n 工具遗留的 `.xcstrings.bak` 资源引用（曾致构建失败）
 - [x] **Debug 签名决策修订（37f48c9）** — Debug 改稳定开发签名（project.yml 按 SHA-1 指定 CODE_SIGN_IDENTITY），根治每次构建触发 TCC 授权弹窗风暴
-- [x] **测试基线** — **711 tests / 0 failures**（2026-10-27，MAS scheme kWise 全量，~6 分钟，无宿主重启；冲刺新增测试全数真跑，Accessibility/Localization/RTL/RehearsalSafety/KeyboardShortcut/DockDrop/CompositionRing/FSEvents 审计套件全绿）；KlarisDirect Debug 构建绿；kWiseSmokeUI 冒烟仍被环境 wedge 阻塞（test runner 建连前挂起，非代码问题，需 GUI 会话授权自动化）。首跑曾现 testLazyHistoryCleanup 宿主崩溃（Core Data 析构竞态），隔离复跑 7/7 绿、全量复跑自愈——测试宿主环境族，非产品回归
+- [x] **测试基线** — **711 tests / 0 failures**（2026-10-27，MAS scheme kWise 全量，~6 分钟，无宿主重启；冲刺新增测试全数真跑，Accessibility/Localization/RTL/RehearsalSafety/KeyboardShortcut/DockDrop/CompositionRing/FSEvents 审计套件全绿）；NovaAtlasDirect Debug 构建绿；kWiseSmokeUI 冒烟仍被环境 wedge 阻塞（test runner 建连前挂起，非代码问题，需 GUI 会话授权自动化）。首跑曾现 testLazyHistoryCleanup 宿主崩溃（Core Data 析构竞态），隔离复跑 7/7 绿、全量复跑自愈——测试宿主环境族，非产品回归
 - [ ] **遗留** — GUI 冒烟清单（VoiceOver 实测 / 完成动画视觉 / ring hover / trash 组下钻 / Spotlight 短语收录 / Dock 拖放端到端 / 冒烟套件解 wedge 后复跑）；挂账 minors 见 `.superpowers/sdd/2026-10-26-klaris-feature-sprint/progress.md`
 
 ### Backlog（待设计）
-- [ ] Klaris P3 剩余 — L2 语义归因；直营付费/更新方案；UI 冒烟 + ASC 材料
+- [ ] NovaAtlas P3 剩余 — L2 语义归因；直营付费/更新方案；UI 冒烟 + ASC 材料
 - [ ] kWise v2 — 3D 磁盘星系图（2D 空间地图也已随 P2 T9 退役；Metal 重启需 Product 拍板）
-- [ ] Klaris 发布决策 — TestFlight / MAS 元数据 / 提审节奏（功能门槛已齐：6 模块 + 双渠道；待重启后全量基线 + ASC 记录/截图/IAP）
+- [ ] NovaAtlas 发布决策 — TestFlight / MAS 元数据 / 提审节奏（功能门槛已齐：6 模块 + 双渠道；待重启后全量基线 + ASC 记录/截图/IAP）
 
 > ⚠️ **现阶段不要写实现代码**。所有设计待汇总到 spec 文档并通过后，再通过 writing-plans 技能拆解为可执行任务。
 
 ---
 
-最后更新：2026-10-27（Klaris 推荐冲刺收官：13 任务 + MAS 基线 711/0 + KlarisDirect Debug 构建；12 语本地化 / Control Widget 26+ / 无障碍审计等 12 项新能力入表；此前 2026-10-25 P3 双渠道 672/0）
+最后更新：2026-11-05（品牌统一改名 NovaAtlas：bundle ID / App Group / 深链 / workspace / 脚本 / CI 全量迁移，`com.novaatlas.*`；历史归档保留旧名；上一里程碑：2026-10-27 推荐冲刺 711/0）

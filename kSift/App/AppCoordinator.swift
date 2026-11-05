@@ -19,9 +19,9 @@ public final class AppCoordinator: ObservableObject, @unchecked Sendable {
     public static var active: AppCoordinator?
 
     private static let finderSyncNotificationName: CFNotificationName =
-        CFNotificationName("com.kraftly.ksift.scanFolder" as CFString)
+        CFNotificationName("com.novaatlas.ksift.scanFolder" as CFString)
     private static let finderSyncPendingPathKey = "ksift.finderSync.pendingPath"
-    private static let appGroupSuite = "group.app.kraftly.ksift"
+    private static let appGroupSuite = "group.com.novaatlas.ksift"
 
     public init(appState: AppState? = nil) {
         self.appState = appState

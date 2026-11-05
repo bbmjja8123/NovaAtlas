@@ -30,7 +30,7 @@ actor UninstallHistoryRepository {
     /// - Parameter inMemory: When `true`, uses an in-memory store so tests /
     ///   previews never touch the on-disk database. Defaults to `false`, which
     ///   backs the store at
-    ///   `~/Library/Application Support/app.kraftly.kfresh/UninstallHistory.sqlite`.
+    ///   `~/Library/Application Support/com.novaatlas.kfresh/UninstallHistory.sqlite`.
     init(inMemory: Bool = false) {
         let container = NSPersistentContainer(
             name: "UninstallHistory",
@@ -43,7 +43,7 @@ actor UninstallHistoryRepository {
                 for: .applicationSupportDirectory,
                 in: .userDomainMask
             ).first ?? FileManager.default.temporaryDirectory
-            let directoryURL = baseURL.appendingPathComponent("app.kraftly.kfresh", isDirectory: true)
+            let directoryURL = baseURL.appendingPathComponent("com.novaatlas.kfresh", isDirectory: true)
             do {
                 try FileManager.default.createDirectory(
                     at: directoryURL,

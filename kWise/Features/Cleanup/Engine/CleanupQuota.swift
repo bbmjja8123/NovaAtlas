@@ -7,7 +7,7 @@
 // reports every finished run through `CleanupEventSink`, so the menu bar
 // "最近清理" row, streaks, the monthly report, and the widget snapshot all
 // observe the same events. What changed is the read side: ownership of the
-// non-consumable buyout (`app.kraftly.klaris.buyout`) is the only thing
+// non-consumable buyout (`com.novaatlas.novaatlas.buyout`) is the only thing
 // between the user and a cleanup.
 //
 // R5 (binding): the unpurchased state is a *refusal*, not a truncation —

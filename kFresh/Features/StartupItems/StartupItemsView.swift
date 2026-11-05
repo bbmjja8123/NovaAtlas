@@ -70,7 +70,7 @@ struct StartupItemsView: View {
             }
             Button("取消", role: .cancel) { removeConfirmation = nil }
         } message: { item in
-            Text("\(item.name) 将被备份到 ~/Library/Application Support/app.kraftly.kfresh/Backups/StartupItems/")
+            Text("\(item.name) 将被备份到 ~/Library/Application Support/com.novaatlas.kfresh/Backups/StartupItems/")
         }
     }
 

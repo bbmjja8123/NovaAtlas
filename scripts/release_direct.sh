@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # release_direct.sh — Archive, sign, notarize and staple the DIRECT
-# (Developer ID) edition of Klaris (target KlarisDirect, non-sandboxed).
+# (Developer ID) edition of NovaAtlas (target NovaAtlasDirect, non-sandboxed).
 #
 # Requires:
 #   - $TEAM_ID (default TC973L6HPC)
@@ -20,7 +20,7 @@ IDENTITY="${IDENTITY:-Developer ID Application}"
 WORKTREE=$(git rev-parse --show-toplevel)
 PROJECT="$WORKTREE/kWise/kWise.xcodeproj"
 BUILD_DIR="$WORKTREE/kWise/build/direct"
-ARCHIVE="$BUILD_DIR/KlarisDirect.xcarchive"
+ARCHIVE="$BUILD_DIR/NovaAtlasDirect.xcarchive"
 VERSION="${1:-}"
 BUILD_NUM="${2:-}"
 
@@ -33,7 +33,7 @@ mkdir -p "$BUILD_DIR"
 # 1. Archive the direct target (Release: real team + hardened runtime;
 #    no App Sandbox — entitlements file kWiseDirect.entitlements).
 xcodebuild -project "$PROJECT" \
-  -scheme KlarisDirect \
+  -scheme NovaAtlasDirect \
   -configuration Release \
   -archivePath "$ARCHIVE" \
   -allowProvisioningUpdates \
@@ -57,11 +57,11 @@ xcodebuild -exportArchive \
   -exportPath "$BUILD_DIR/export/" \
   -exportOptionsPlist "$BUILD_DIR/ExportOptions.plist"
 
-APP=$(find "$BUILD_DIR/export" -name "Klaris.app" -maxdepth 3 | head -1)
-[ -n "$APP" ] || { echo "error: exported Klaris.app not found"; exit 1; }
+APP=$(find "$BUILD_DIR/export" -name "NovaAtlas.app" -maxdepth 3 | head -1)
+[ -n "$APP" ] || { echo "error: exported NovaAtlas.app not found"; exit 1; }
 
 # 3. Zip + notarize + staple.
-ZIP="$BUILD_DIR/Klaris.zip"
+ZIP="$BUILD_DIR/NovaAtlas.zip"
 ditto -c -k --keepParent "$APP" "$ZIP"
 
 xcrun notarytool submit "$ZIP" \

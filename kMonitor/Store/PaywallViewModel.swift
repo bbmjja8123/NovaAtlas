@@ -66,7 +66,7 @@ public final class PaywallViewModel: ObservableObject {
         isPro = storeManager.isPro
     }
 
-    /// Buy `app.kraftly.kmonitor.pro`. Triggers the in-flight spinner on
+    /// Buy `com.novaatlas.kmonitor.pro`. Triggers the in-flight spinner on
     /// `PurchaseButton` and surfaces errors through `errorMessage`.
     public func purchase() async {
         guard !isPurchasing else { return }

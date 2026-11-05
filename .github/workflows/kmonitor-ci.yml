@@ -32,7 +32,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Select Xcode
-        # The Kraftly project targets Xcode 15.0 / Swift 5.9. macos-14
+        # The NovaAtlas project targets Xcode 15.0 / Swift 5.9. macos-14
         # runners ship with Xcode 16 by default; pin to 15.0 so the
         # same compiler warnings surface locally and in CI.
         uses: maxim-lobanov/setup-xcode@v1

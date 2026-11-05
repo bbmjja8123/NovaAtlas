@@ -22,7 +22,7 @@ struct DeepCleanIntent: AppIntent {
             return nil
         }
         let logURL = appSupport
-            .appendingPathComponent("app.kraftly.kfresh", isDirectory: true)
+            .appendingPathComponent("com.novaatlas.kfresh", isDirectory: true)
             .appendingPathComponent("audit", isDirectory: true)
             .appendingPathComponent("deepclean.jsonl")
         do {

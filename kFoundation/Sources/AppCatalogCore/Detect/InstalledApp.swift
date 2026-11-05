@@ -55,7 +55,7 @@ public enum ResidueType: String, Codable, CaseIterable, Sendable {
 /// Risk classification that drives the 4-level uninstall confirm sheet
 /// (see `kFresh/Features/Detail/UninstallConfirmSheet.swift`).
 ///
-/// The four buckets follow the Kraftly CLAUDE.md §8.6 convention also used
+/// The four buckets follow the NovaAtlas CLAUDE.md §8.6 convention also used
 /// by kSpaceClean: 🟢 Recommended (safe by default), ⚪ Optional (off by
 /// default, single confirm), 🟠 Caution (off by default, warning copy),
 /// 🔴 Dangerous (off by default, double-confirm + literal "DELETE" input).

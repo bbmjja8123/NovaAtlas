@@ -41,12 +41,12 @@
   - 条款链接指向 C4 的隐私政策 URL + C5 的支持 URL
 
 - [ ] **C4** 部署隐私政策 URL（GitHub Pages）
-  - 新仓库：`kraftly-legal/privacy.kmonitor.html`（GitHub Pages）
+  - 新仓库：`novaatlas-legal/privacy.kmonitor.html`（GitHub Pages）
   - 内容：零收集说明、TCC 权限说明、订阅条款、未成年人政策、联系方式
   - 三语版本（en/zh-Hans/ja）
 
 - [ ] **C5** 部署支持 URL（GitHub Pages）
-  - URL：`https://support.kraftly.app`（临时 GitHub Pages）
+  - URL：`https://support.novaatlas.app`（临时 GitHub Pages）
   - 内容：FAQ、联系方式、状态页、Discord 链接
 
 - [ ] **C6** App Store Connect 隐私标签勾选

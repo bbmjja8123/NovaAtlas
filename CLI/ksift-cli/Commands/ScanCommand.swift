@@ -16,7 +16,7 @@ struct ScanCommand {
         }
         if paths.isEmpty { paths = [FileManager.default.currentDirectoryPath] }
 
-        let connection = NSXPCConnection(serviceName: "app.kraftly.kdupe.xpc")
+        let connection = NSXPCConnection(serviceName: "com.novaatlas.kdupe.xpc")
         connection.remoteObjectInterface = NSXPCInterface(with: XPCDuplicateServiceProtocol.self)
         connection.resume()
 

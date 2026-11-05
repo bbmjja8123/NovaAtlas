@@ -38,7 +38,7 @@ jobs:
       - name: Run kFresh unit tests
         run: |
           xcodebuild test \
-            -workspace KraftlyWorkspace.xcworkspace \
+            -workspace NovaAtlasWorkspace.xcworkspace \
             -scheme kFresh \
             -destination 'platform=macOS' \
             -quiet \

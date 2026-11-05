@@ -4,7 +4,7 @@ import AppCatalogCore
 
 @objc(UninstallHistory)
 public class UninstallHistory: NSManagedObject {
-    private static let logger = Logger(subsystem: "app.kraftly.kfresh", category: "UninstallHistory")
+    private static let logger = Logger(subsystem: "com.novaatlas.kfresh", category: "UninstallHistory")
 
     var residues: [ResidueFile] {
         get {

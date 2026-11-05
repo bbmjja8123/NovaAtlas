@@ -1,6 +1,6 @@
 // kFoundation/Sources/FileScanner/FSEventsMonitor.swift
 //
-// FSEvents 变更监视（Klaris Task 7 —— 画布「内容有变化——点按重新扫描」
+// FSEvents 变更监视（NovaAtlas Task 7 —— 画布「内容有变化——点按重新扫描」
 // pill 的秒级重扫入口地基）。设计约束：
 // - 回调只在会话生命周期内发生，start 幂等 / stop 后静默（测试钉住）；
 // - latency 之外再加 debounce（coalesce 突发批量写入，2s 静默窗）；
@@ -40,7 +40,7 @@ public final class FSEventsMonitor: @unchecked Sendable {
     }
 
     /// - Parameters:
-    ///   - url: 监视的目录（Klaris 主画布传授权主目录根）。
+    ///   - url: 监视的目录（NovaAtlas 主画布传授权主目录根）。
     ///   - latency: FSEvents 流延迟（合并窗口下限；默认 3s）。
     ///   - onChange: 变更去抖后回调（任意线程；调用方自行跳主线程）。
     public init(watching url: URL, latency: TimeInterval = 3.0,

@@ -4,7 +4,7 @@ import os
 
 actor FDAuthorizer {
     private let fileManager = FileManager.default
-    private let logger = Logger(subsystem: "app.kraftly.kfresh", category: "FDAuthorizer")
+    private let logger = Logger(subsystem: "com.novaatlas.kfresh", category: "FDAuthorizer")
 
     /// Check if FDA is granted by testing ~/Library accessibility
     func checkFDA() -> Bool {

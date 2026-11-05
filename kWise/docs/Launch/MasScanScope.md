@@ -1,4 +1,4 @@
-# Klaris — Mac App Store 版扫描范围契约（MasScanScope）
+# NovaAtlas — Mac App Store 版扫描范围契约（MasScanScope）
 
 > P3 双渠道定稿。本文件是 **产品承诺**，不是实现备忘：任何改动必须同步
 > 修改 `kWiseTests/ScanScopeContractTests.swift`（契约测试）与设置页 /
@@ -6,12 +6,12 @@
 
 ## 渠道模型
 
-| | **Mac App Store 版**（target `kWise`） | **直营版**（target `KlarisDirect`，Developer ID） |
+| | **Mac App Store 版**（target `kWise`） | **直营版**（target `NovaAtlasDirect`，Developer ID） |
 |---|---|---|
 | 沙盒 | 开启（App Sandbox 强制） | 关闭（Hardened Runtime + 公证） |
 | ScopeLevel | `containerOnly` → `homeGranted`（PowerScope 书签授权） | `fullAccess`（`DirectScopeProvider`，无授权流程） |
 | 授权交互 | 一次性 NSOpenPanel 选主目录 → security-scoped bookmark 持久化 | 无（Full Disk Access 语义由系统 TCC 自管） |
-| 付费 | StoreKit 非消耗买断 `app.kraftly.klaris.buyout` | 无内购；买断墙引导去 MAS 购买 |
+| 付费 | StoreKit 非消耗买断 `com.novaatlas.novaatlas.buyout` | 无内购；买断墙引导去 MAS 购买 |
 
 ## MAS 版：三层可读性（唯一事实来源 = `ScopeCapability.canRead`）
 

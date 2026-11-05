@@ -9,11 +9,11 @@
 //  --- Xcode integration (developer must perform manually) -----------------
 //  1. File > New > Target... > Widget Extension.
 //       Product Name: kMonitorWidget
-//       Bundle ID:    app.kraftly.kmonitor.widget
+//       Bundle ID:    com.novaatlas.kmonitor.widget
 //       Deployment:   macOS 13.0
 //  2. In the new target's Signing & Capabilities:
 //       - Enable "App Sandbox".
-//       - Add the "App Groups" capability and check `group.app.kraftly.shared`.
+//       - Add the "App Groups" capability and check `group.com.novaatlas.shared`.
 //  3. Add the following files from the main app target to the widget target's
 //     "Compile Sources" phase (Build Phases > Compile Sources > +):
 //       - SharedSnapshot.swift

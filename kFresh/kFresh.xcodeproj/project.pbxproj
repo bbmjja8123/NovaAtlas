@@ -54,6 +54,7 @@
 		6D1C851B8C7B401A6CB65476 /* StartupItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B32F4D3C08398B6099D9A3 /* StartupItemsView.swift */; };
 		6FA6A3D83AB1FB42C0E0AA58 /* HistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8FF85192835BC3C2D2DC7 /* HistoryRow.swift */; };
 		720A2B10380CFB4E24A04EEB /* BrandButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDFC3F37ED7AEF57D105C3 /* BrandButtonStyle.swift */; };
+		7F7B1A22BD96EE5033F83CE6 /* NovaAtlas.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = B57B93D2CE6C2D92D85187E9 /* NovaAtlas.xcworkspace */; };
 		8140C29D4ECECD98E12DF936 /* FDAGuideControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909C52B300C2D778F50350BA /* FDAGuideControllerTests.swift */; };
 		8332DD78275D7C9F39A3C65B /* SandboxDegradationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A210F06B76768493DD0418 /* SandboxDegradationTests.swift */; };
 		84D3189D34D0705D51306E45 /* AppListFilterSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1D7D5BB151C800E5E0433 /* AppListFilterSortTests.swift */; };
@@ -69,7 +70,6 @@
 		9A85AD20E64BA19D00680601 /* StartupItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B90EB89F4E78784FDA4F3 /* StartupItemManagerTests.swift */; };
 		9D2E586618CD4C2328FDE721 /* StoreManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E8F603708B5A00B79CC804 /* StoreManagerTests.swift */; };
 		A0AD2B8A68B52BE1895C9EAB /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B466FB01CF204CEBFC6AE0A /* LoadingStateView.swift */; };
-		A1206BDBA7F6B45BFC7B92BD /* Kraftly.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = D52D9B472451BDBD6505CBA7 /* Kraftly.xcworkspace */; };
 		A3FFE638565A520D379A5104 /* ScanPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A753E8B5DC8EF05651C712 /* ScanPerformanceTests.swift */; };
 		A7671A13A508C4838DDBD7AD /* AppCatalogCore in Frameworks */ = {isa = PBXBuildFile; productRef = 304868A53B2CC2A68BD892D9 /* AppCatalogCore */; };
 		A7E0A47F34BFFA379117982F /* HistoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944ABACB93F5CC9EB769C418 /* HistoryViewModelTests.swift */; };
@@ -148,7 +148,7 @@
 		2DBC65F20AED95CB94E19D9B /* DeepCleanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepCleanView.swift; sourceTree = "<group>"; };
 		2E0F3CECEAAD21958294F398 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2FAA3677DC5C2C1551295FCB /* kFresh.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = kFresh.xcodeproj; sourceTree = "<group>"; };
-		3097AACAF5D590882B1D36FB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3097AACAF5D590882B1D36FB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3220FDCF090F42117C65163B /* StartupItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupItemsViewModel.swift; sourceTree = "<group>"; };
 		357887B69B6705726999A143 /* fetch_cask_rules.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = fetch_cask_rules.sh; sourceTree = "<group>"; };
 		3A5E08E1ED459B6A0A8CF981 /* kFoundation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = kFoundation; path = ../kFoundation; sourceTree = SOURCE_ROOT; };
@@ -204,6 +204,7 @@
 		ADC1D7D5BB151C800E5E0433 /* AppListFilterSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListFilterSortTests.swift; sourceTree = "<group>"; };
 		ADF2EA2F5A05C8190E2458AC /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
 		B0D117271989853C73872577 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B57B93D2CE6C2D92D85187E9 /* NovaAtlas.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = NovaAtlas.xcworkspace; sourceTree = "<group>"; };
 		BCE13E56EA468DCF0BB147F6 /* StartupItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupItemRowView.swift; sourceTree = "<group>"; };
 		BFB1841B9E905CD1A84C5E36 /* TrashMoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashMoverTests.swift; sourceTree = "<group>"; };
 		BFC3825C8FC7962AC46E9055 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -213,8 +214,7 @@
 		D0385DC43A7C38F193F6BCB5 /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
 		D100A051F4F09FAF735B41E2 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		D1D5C13B9851C107D295B7E4 /* OnboardingRoutingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRoutingTests.swift; sourceTree = "<group>"; };
-		D4F97FF37D8BCEA85582C8E1 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
-		D52D9B472451BDBD6505CBA7 /* Kraftly.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Kraftly.xcworkspace; sourceTree = "<group>"; };
+		D4F97FF37D8BCEA85582C8E1 /* Configuration.storekit */ = {isa = PBXFileReference; path = Configuration.storekit; sourceTree = "<group>"; };
 		D62D879A8DB363FE915733C3 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		D950F52ADAAF1A18527BD988 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		D977565FDD180344A00EFEF2 /* ScanProgressBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanProgressBanner.swift; sourceTree = "<group>"; };
@@ -358,11 +358,6 @@
 			path = Clean;
 			sourceTree = "<group>";
 		};
-		3A5DD8443052874D00B27B67 /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3FC4B141B8199AFD9A3B7F1C /* FinderExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,7 +377,17 @@
 				E9477FD45619176DD253E398 /* kFresh.entitlements */,
 				2FAA3677DC5C2C1551295FCB /* kFresh.xcodeproj */,
 				3CCCD40246B7263AFBCB7AAF /* kFreshDebug.entitlements */,
-				D52D9B472451BDBD6505CBA7 /* Kraftly.xcworkspace */,
+				B57B93D2CE6C2D92D85187E9 /* NovaAtlas.xcworkspace */,
+				F34AB12170FB7139D79A4696 /* App */,
+				D50474218CA8F9E66E7C02F5 /* Core */,
+				EEDC5B21C5A80F7F4F45AE31 /* Data */,
+				E44B176892D6B8100246EA50 /* Features */,
+				3FC4B141B8199AFD9A3B7F1C /* FinderExtension */,
+				12DFD0715BD2953DCABB4021 /* Intents */,
+				2874BED6A21D48909379A969 /* MenuBar */,
+				5EFFE2A5E6D085447AFAECAC /* Resources */,
+				B4BE23D65F9B189632246EAB /* Store */,
+				5AF7CB6FA63B56AA795481EB /* Widgets */,
 			);
 			name = kFresh;
 			path = .;
@@ -762,12 +767,6 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 062F8484B279F2B7AEF5726C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3A5DD8443052874D00B27B67 /* Products */;
-					ProjectRef = 2FAA3677DC5C2C1551295FCB /* kFresh.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				7E7CF38591D555B2829E7B45 /* kFresh */,
@@ -786,8 +785,8 @@
 				BEDAC4B7C072AD17B3408B84 /* Assets.xcassets in Resources */,
 				34ED278D55D80761D2024613 /* Configuration.storekit in Resources */,
 				C1BF22CC2F14AA6390AE941A /* Info.plist in Resources */,
-				A1206BDBA7F6B45BFC7B92BD /* Kraftly.xcworkspace in Resources */,
 				99212BE1009DEA10A01B2F41 /* Localizable.xcstrings in Resources */,
+				7F7B1A22BD96EE5033F83CE6 /* NovaAtlas.xcworkspace in Resources */,
 				3D895259E9B141D0FAEAB1FA /* PrivacyInfo.xcprivacy in Resources */,
 				173E38CB38228E7F3BF6B35D /* extract_cask_bundle_id.py in Resources */,
 				29E339CDC5C8A157C8A74585 /* fetch_cask_rules.sh in Resources */,
@@ -952,7 +951,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.kraftly.kfresh.finder-sync";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novaatlas.kfresh.finder-sync";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -967,7 +966,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.kraftly.kfresh.finder-sync";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.novaatlas.kfresh.finder-sync";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1047,7 +1046,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.kraftly.kfresh.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novaatlas.kfresh.tests;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.9;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kFresh.app/Contents/MacOS/kFresh";
@@ -1124,7 +1123,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.kraftly.kfresh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novaatlas.kfresh;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1142,7 +1141,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.kraftly.kfresh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novaatlas.kfresh;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1158,7 +1157,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.kraftly.kfresh.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.novaatlas.kfresh.tests;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.9;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kFresh.app/Contents/MacOS/kFresh";

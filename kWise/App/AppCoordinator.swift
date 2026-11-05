@@ -9,11 +9,11 @@ import SwiftUI
 ///
 /// P2 T9（spec §7 深链终态）：可导航面只剩 anatomy / history / settings。
 /// 深链映射 ——
-/// - `klaris://scan?path=` → anatomy（扫描即动作，hero 发起；Finder 扩展入口）
-/// - `klaris://smartcare` → anatomy（hero「安全快捷回收」承接）
-/// - `klaris://health`    → anatomy（DiskHealthCard 在画布上，点击出详情 sheet）
-/// - `klaris://history`   → history（通知深链 / 时间线）
-/// - `klaris://settings`  → settings
+/// - `novaatlas://scan?path=` → anatomy（扫描即动作，hero 发起；Finder 扩展入口）
+/// - `novaatlas://smartcare` → anatomy（hero「安全快捷回收」承接）
+/// - `novaatlas://health`    → anatomy（DiskHealthCard 在画布上，点击出详情 sheet）
+/// - `novaatlas://history`   → history（通知深链 / 时间线）
+/// - `novaatlas://settings`  → settings
 /// 已退役面的旧深链（clean/privacy/startup/uninstall/shred/tools/spacemap/
 /// report/duplicates/largefiles/photoclean/maintenance）不再处理 —— 返回
 /// false 走「未处理」，绝不把用户引向一个不存在的表面。P3：卸载/启动项
@@ -34,20 +34,20 @@ public final class AppCoordinator: ObservableObject {
         self.appState = appState
     }
 
-    // MARK: - Deep links (klaris://)
+    // MARK: - Deep links (novaatlas://)
 
     /// Handle an incoming deep link URL. Returns `true` when handled.
     @discardableResult
     public func handleDeepLink(_ url: URL) -> Bool {
         guard let scheme = url.scheme,
-              scheme == "klaris"
+              scheme == "novaatlas"
         else { return false }
-        // klaris://scan → host "scan"
+        // novaatlas://scan → host "scan"
         guard let host = url.host else { return false }
 
         switch host {
         case "scan":
-            // spec §7：`scan?path=` 保留 —— Finder 扩展「用 Klaris 扫描」
+            // spec §7：`scan?path=` 保留 —— Finder 扩展「用 NovaAtlas 扫描」
             // 的上下文入口。落解剖画布（扫描即动作，hero 发起扫描）。
             navigate(to: .anatomy)
             return true

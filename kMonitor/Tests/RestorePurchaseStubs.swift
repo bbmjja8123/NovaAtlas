@@ -67,7 +67,7 @@ final class StubNotificationScheduler: NotificationSchedulerProtocol, @unchecked
 /// `SettingsViewModel.restorePurchases()` delegates to the manager.
 @MainActor
 final class RecordingStoreManager: StoreManagerProtocol, ObservableObject, @unchecked Sendable {
-    let productID: String = "app.kraftly.kmonitor.pro"
+    let productID: String = "com.novaatlas.kmonitor.pro"
     @Published var products: [Product] = []
     @Published var isPro: Bool = false
     var primaryProduct: Product? { nil }

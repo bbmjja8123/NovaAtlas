@@ -1,4 +1,4 @@
-# App Store Submission Runbook — Klaris v1.6（2026-10-25 修订）
+# App Store Submission Runbook — NovaAtlas v1.6（2026-10-25 修订）
 
 > 2026-10-25 重写：对齐 P0 bundle 迁移、P1 买断制、P3 双渠道与
 > MasScanScope.md。旧 v1.0 runbook（ProAnnual / FDA / 旧 worktree 路径）作废。
@@ -8,11 +8,11 @@
 - [ ] Release 配置 = 真实 entitlements（project.yml configs.Release）；
       Debug 构建 = ad-hoc 无 entitlements（本地开发口径，不影响提审）
 - [ ] 截图按 ScreenshotsSpec.md 备齐（2560×1600 ≥3 + 2880×1800 ≥1）
-- [ ] 隐私政策 https://kraftly.app/privacy 在线（三语）
+- [ ] 隐私政策 https://novaatlas.app/privacy 在线（三语）
 - [ ] 支持 URL 在线
-- [ ] IAP 已创建：`app.kraftly.klaris.buyout`（Non-Consumable，
+- [ ] IAP 已创建：`com.novaatlas.novaatlas.buyout`（Non-Consumable，
       $9.90 / ¥68，无订阅无试用）
-- [ ] App Store Connect 记录：bundle `app.kraftly.klaris`，SKU klaris-mas
+- [ ] App Store Connect 记录：bundle `com.novaatlas.novaatlas`，SKU novaatlas-mas
 - [ ] 全量测试基线绿（见 MAS scan scope 契约测试与 Localization 门禁）
 
 ## Steps
@@ -31,11 +31,11 @@ scripts/upload_to_testflight.sh          # archive + export + 上传一条龙
 - App Store Connect 处理 5–15 分钟；出口合规答 **No**（零加密）
 
 ### 3. 版本页填写
-- 元数据逐块复制 AppStoreMetadata.md（名称 Klaris / 明澈，副标题三语）
+- 元数据逐块复制 AppStoreMetadata.md（名称 NovaAtlas / 明澈，副标题三语）
 - 截图按展示顺序挂载
 - App Privacy 按 PrivacyDetails.md：全部 Data Not Collected
 - 审核备注（关键 —— 预防 2.4.1/2.4.5）：
-  > Klaris is sandboxed per MAS requirements. It cannot obtain Full Disk
+  > NovaAtlas is sandboxed per MAS requirements. It cannot obtain Full Disk
   > Access; instead the user grants the home folder once via NSOpenPanel
   > (security-scoped bookmark, revocable in Settings). Without the grant the
   > app honestly shows a grant prompt instead of empty results. Zero network
@@ -51,7 +51,7 @@ scripts/upload_to_testflight.sh          # archive + export + 上传一条龙
 - 全区可用（无禁售区）
 
 ### 6. 内购
-- 核对 `app.kraftly.klaris.buyout` 与 StoreManager.productID 一致
+- 核对 `com.novaatlas.novaatlas.buyout` 与 StoreManager.productID 一致
 - 附内购审核截图（PaywallView 买断墙）
 
 ### 7. 提审
@@ -70,7 +70,7 @@ scripts/upload_to_testflight.sh          # archive + export + 上传一条龙
 ```bash
 scripts/release_direct.sh   # archive → Developer ID → notarytool → staple
 ```
-- Hardened Runtime 必开（project.yml KlarisDirect 已设）
+- Hardened Runtime 必开（project.yml NovaAtlasDirect 已设）
 - 过渡期付费：买断墙引导去 MAS 购买
 
 ## Post-Approval

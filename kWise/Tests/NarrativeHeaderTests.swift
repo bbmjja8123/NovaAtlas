@@ -277,13 +277,13 @@ final class NarrativeHeaderTests: XCTestCase {
     }
 
     func testReportDeepLinkLandsOnHistory() {
-        // 月报已并入历史页 —— klaris://report 诚实落到历史（叙事头所在）。
+        // 月报已并入历史页 —— novaatlas://report 诚实落到历史（叙事头所在）。
         let state = AppState()
         let coordinator = AppCoordinator(appState: state)
 
-        XCTAssertTrue(coordinator.handleDeepLink(URL(string: "klaris://report")!))
+        XCTAssertTrue(coordinator.handleDeepLink(URL(string: "novaatlas://report")!))
         XCTAssertEqual(state.navigation, .history)
-        XCTAssertTrue(coordinator.handleDeepLink(URL(string: "klaris://monthlyreport")!))
+        XCTAssertTrue(coordinator.handleDeepLink(URL(string: "novaatlas://monthlyreport")!))
         XCTAssertEqual(state.navigation, .history)
     }
 }

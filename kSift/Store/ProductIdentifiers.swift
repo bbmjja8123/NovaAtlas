@@ -4,5 +4,5 @@ import Foundation
 /// (Non-Consumable) — subscriptions were explicitly rejected as a poor
 /// fit for a low-frequency utility.
 enum ProductID: String, CaseIterable {
-    case fullLicense = "app.kraftly.ksift.full_license"
+    case fullLicense = "com.novaatlas.ksift.full_license"
 }
